@@ -1,0 +1,26 @@
+.topBarLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icon {
+  color: var(--primary-font);
+  transform: scale(0.8);
+}
+.content {
+  color: var(--primary-font);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 410px) {
+  .topBarLeft{
+    gap: 4px;
+  }
+  .content {
+    font-size: 12px;
+  }
+  .icon {
+    transform: scale(0.6);
+  }
+}

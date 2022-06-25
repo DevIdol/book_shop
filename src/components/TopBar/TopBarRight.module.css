@@ -1,0 +1,15 @@
+.topBarRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.icon {
+  color: var(--primary-font);
+  font-size: 20px;
+}
+@media screen and (max-width: 410px) {
+  .icon {
+    font-size: 16px;
+  }
+}
