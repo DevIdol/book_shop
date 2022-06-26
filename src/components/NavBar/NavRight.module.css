@@ -1,0 +1,29 @@
+.navRight {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.login,
+.orders {
+  padding-bottom: 4px;
+}
+.item {
+  color: var(--primary-font);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+.menu{
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .login,
+  .orders {
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+}

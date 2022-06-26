@@ -6,12 +6,48 @@
   outline: 0;
   text-decoration: none !important;
   font-family: 'Playfair', 'Poppins', sans-serif;
+  list-style: none;
 }
 :root {
   --transition: all 0.6s ease;
   --primary-color: #325453;
+  --secondary-color: #517174;
+  --third-color: #4e1d04;
   --primary-font: #fff;
+  --hover-color: #f1f3f4;
 }
 html {
   scroll-behavior: smooth;
+}
+
+.MuiInputBase-root {
+  padding: 0 !important;
+}
+@media screen and (max-width: 420px) {
+  .MuiButtonBase-root {
+    width: 20px !important;
+  }
+  .ForwardRef-searchContainer,
+  .MuiPaper-root {
+    padding: 0 !important;
+  }
+  .MuiInputBase-root {
+    width: 150px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .MuiInputBase-root {
+    width: 120px !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .MuiInputBase-root {
+    width: 100px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .MuiInputBase-root {
+    width: 90px !important;
+  }
 }
