@@ -6,7 +6,13 @@
 }
 .login,
 .orders {
-  padding-bottom: 4px;
+  padding-bottom: 2px;
+}
+.badge {
+  font-weight: 600;
+}
+.cart {
+  color: var(--primary-font) !important;
 }
 .item {
   color: var(--primary-font);
@@ -14,7 +20,7 @@
   font-weight: 500;
   font-size: 16px;
 }
-.menu{
+.menu {
   display: none;
 }
 
@@ -23,7 +29,7 @@
   .orders {
     display: none;
   }
-  .menu{
+  .menu {
     display: block;
   }
 }

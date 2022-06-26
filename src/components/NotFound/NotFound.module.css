@@ -1,0 +1,18 @@
+.notfound {
+  width: 100%;
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  background-color: var(--third-color);
+  width: 2px;
+  height: 30px;
+  margin: 0 10px;
+}
+.notfound p{
+    font-weight: 500;
+    font-size: 16px;
+}
