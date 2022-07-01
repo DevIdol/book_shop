@@ -1,6 +1,17 @@
 .categories {
-  padding-top: 30px;
+  padding-top: 20px;
+}
+.accordion{
+  padding-top: 10px;
 }
 .accordion2 {
   margin-top: 20px;
+}
+.catTitle{
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  border-top: 1px solid var(--third-color);
+  border-bottom: 1px solid var(--third-color);
+  padding: 6px 0;
 }

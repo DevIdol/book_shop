@@ -9,7 +9,8 @@ const NavRight = ({ isOpen }) => {
       <NavLink
         style={({ isActive }) => {
           return {
-            color: isActive && "red",
+            color: isActive && "#fff",
+            fontWeight: isActive && "bold",
           };
         }}
         to="/login"
@@ -20,7 +21,8 @@ const NavRight = ({ isOpen }) => {
       <NavLink
         style={({ isActive }) => {
           return {
-            color: isActive && "red",
+            color: isActive && "#fff",
+            fontWeight: isActive && "bold",
           };
         }}
         to="/orders"
@@ -31,7 +33,8 @@ const NavRight = ({ isOpen }) => {
       <NavLink
         style={({ isActive }) => {
           return {
-            color: isActive && "red",
+            color: isActive && "#fff",
+            fontWeight: isActive && "bold",
           };
         }}
         to="/add-to-cart"

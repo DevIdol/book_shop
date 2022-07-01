@@ -5,7 +5,8 @@ import styles from "./Category.module.css";
 const Category = () => {
   return (
     <Container className={styles.categories}>
-      <Accordion defaultActiveKey="0" flush>
+      <h4 className={styles.catTitle} >Categories</h4>
+      <Accordion defaultActiveKey="0" flush className={styles.accordion}>
         <Accordion.Item eventKey="0" className={styles.accordion1}>
           <Accordion.Header>Myanmar Books</Accordion.Header>
           <Accordion.Body>

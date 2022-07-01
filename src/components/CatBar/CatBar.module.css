@@ -47,15 +47,27 @@
   height: 100%;
   width: 300px;
   position: fixed;
-  top: 90px;
+  top: 0;
   left: -320px;
   overflow-x: hidden;
-  padding-bottom: 160px;
-  z-index: 0;
+  padding-bottom: 40px;
+  z-index: 999;
   border-right: 1px solid gray;
 }
 .sideBar.active {
   left: 0;
+  transition: var(--transition);
+}
+.overflow {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 100vh;
+  z-index: 2;
   transition: var(--transition);
 }
 @media screen and (max-width: 800px) {

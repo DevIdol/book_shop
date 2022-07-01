@@ -40,6 +40,7 @@ const Home = () => {
       >
         <Category />
       </div>
+      {openMenu && <div onClick={closeMenu} className={styles.overflow}></div>}
     </Fragment>
   );
 };
