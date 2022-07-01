@@ -12,7 +12,7 @@
   height: 30px;
   margin: 0 10px;
 }
-.notfound p{
-    font-weight: 500;
-    font-size: 16px;
+.notfound span {
+  font-weight: 500;
+  font-size: 16px;
 }

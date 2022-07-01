@@ -1,0 +1,74 @@
+.catBar {
+  height: 40px;
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.category {
+  display: none;
+}
+.cat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divider {
+  width: 2px;
+  height: 20px;
+  background-color: black;
+  margin: 0 10px;
+}
+.item,
+.item:hover {
+  color: var(--third-color);
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 40px;
+}
+.icon {
+  margin: 0 4px;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+.catBar span {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sideBar {
+  display: none;
+  background-color: var(--primary-font);
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 90px;
+  left: -320px;
+  overflow-x: hidden;
+  padding-bottom: 160px;
+  z-index: 0;
+  border-right: 1px solid gray;
+}
+.sideBar.active {
+  left: 0;
+  transition: var(--transition);
+}
+@media screen and (max-width: 800px) {
+  .category {
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .items {
+    padding-left: 0px;
+  }
+  .sideBar {
+    display: block;
+  }
+}

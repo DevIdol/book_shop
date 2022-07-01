@@ -12,7 +12,9 @@
   color: var(--primary-font);
   font-size: 14px;
 }
-
+.content:hover{
+  color: var(--primary-font);
+}
 @media screen and (max-width: 410px) {
   .topBarLeft{
     gap: 4px;

@@ -6,13 +6,37 @@ import Badge from "@mui/material/Badge";
 const NavRight = ({ isOpen }) => {
   return (
     <ul className={styles.navRight}>
-      <NavLink to="/login" className={`${styles.item} ${styles.login}`}>
+      <NavLink
+        style={({ isActive }) => {
+          return {
+            color: isActive && "red",
+          };
+        }}
+        to="/login"
+        className={`${styles.item} ${styles.login}`}
+      >
         Login
       </NavLink>
-      <NavLink to="/orders" className={`${styles.item} ${styles.orders}`}>
+      <NavLink
+        style={({ isActive }) => {
+          return {
+            color: isActive && "red",
+          };
+        }}
+        to="/orders"
+        className={`${styles.item} ${styles.orders}`}
+      >
         Orders
       </NavLink>
-      <NavLink to="/add-to-cart" className={styles.item}>
+      <NavLink
+        style={({ isActive }) => {
+          return {
+            color: isActive && "red",
+          };
+        }}
+        to="/add-to-cart"
+        className={styles.item}
+      >
         <Badge color="error" className={styles.badge} badgeContent={10}>
           <AddShoppingCartIcon className={styles.cart} />
         </Badge>

@@ -3,9 +3,9 @@ import styles from "./NotFound.module.css";
 const NotFound = () => {
   return (
     <div className={styles.notfound}>
-      <p>404</p>
+      <span>404</span>
       <div className={styles.divider}></div>
-      <p className={styles.content}>The Result Not Found!</p>
+      <span className={styles.content}>The Result Not Found!</span>
     </div>
   );
 };

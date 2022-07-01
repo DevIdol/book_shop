@@ -1,5 +1,6 @@
 .navRight {
   display: flex;
+  padding-top: 20px;
   gap: 20px;
   justify-content: flex-end;
   align-items: flex-end;
@@ -20,11 +21,17 @@
   font-weight: 500;
   font-size: 16px;
 }
+.item:hover{
+  color: var(--primary-font);
+}
 .menu {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+  .navRight{
+    gap: 24px;
+  }
   .login,
   .orders {
     display: none;
