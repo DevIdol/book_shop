@@ -1,0 +1,20 @@
+.sideBar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 130;
+    left: 0;
+    overflow-x: hidden;
+    padding-bottom: 160px;
+    z-index: 0;
+    border-right: 1px solid gray;
+  }
+
+  
+  @media screen and (max-width: 800px) {
+    .sideBar {
+      display: none;
+    }
+
+  }
+  

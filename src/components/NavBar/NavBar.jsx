@@ -18,7 +18,7 @@ const NavBar = () => {
       <NavLeft />
       <NavCenter />
       <NavRight isOpen={toggleMenu} />
-      <MenuBar openMenu={openMenu} />
+      <MenuBar openMenu={openMenu} onClose={closeMenu} />
       {openMenu && <div onClick={closeMenu} className={styles.overflow}></div>}
     </nav>
   );

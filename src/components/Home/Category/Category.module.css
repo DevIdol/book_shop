@@ -1,3 +1,14 @@
+.left {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 130;
+  left: 0;
+  overflow-x: hidden;
+  padding-bottom: 160px;
+  z-index: 0;
+  border-right: 1px solid gray;
+}
 .categories {
   padding-top: 20px;
 }
@@ -14,4 +25,24 @@
   border-top: 1px solid var(--third-color);
   border-bottom: 1px solid var(--third-color);
   padding: 6px 0;
+}
+
+.catItems{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.catItem{
+  font-size: 16px;
+  cursor: pointer;
+  color: #000;
+}
+.catItem:hover{
+  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  .left {
+    display: none;
+  }
 }

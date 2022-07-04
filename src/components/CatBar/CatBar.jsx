@@ -38,7 +38,7 @@ const Home = () => {
           openMenu ? `${styles.sideBar} ${styles.active}` : styles.sideBar
         }
       >
-        <Category />
+        <Category onClose={closeMenu} />
       </div>
       {openMenu && <div onClick={closeMenu} className={styles.overflow}></div>}
     </Fragment>

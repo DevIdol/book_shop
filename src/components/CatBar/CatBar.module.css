@@ -53,6 +53,7 @@
   padding-bottom: 40px;
   z-index: 999;
   border-right: 1px solid gray;
+  transition: var(--transition);
 }
 .sideBar.active {
   left: 0;

@@ -1,0 +1,11 @@
+.allBook {
+  width: var(100% - 300px);
+  margin-left: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  .allBook {
+    margin-left: 0;
+    width: 100%;
+  }
+}
