@@ -1,11 +1,11 @@
-import styles from './AllBook.module.css'
+import styles from "./Books.module.css";
 
 const AllBook = () => {
   return (
-    <div className={styles.allBook}>
+    <div className={styles.books}>
       <h1>All Book</h1>
     </div>
-  )
-}
+  );
+};
 
-export default AllBook
+export default AllBook;

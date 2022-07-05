@@ -1,4 +1,6 @@
 .catBar {
+  position: fixed;
+  top: 90px;
   height: 40px;
   width: 100%;
   background-color: yellow;
@@ -6,6 +8,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  z-index: 9999;
 }
 .category {
   display: none;

@@ -30,15 +30,18 @@
 .catItems{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: flex-start;
 }
 .catItem{
   font-size: 16px;
   cursor: pointer;
   color: #000;
+  padding: 10px;
 }
 .catItem:hover{
   color: #000;
+  border-radius: 10px;
+  background-color: var(--hover-color);
 }
 
 @media screen and (max-width: 800px) {

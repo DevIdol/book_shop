@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
+  transition: var(--transition);
+  z-index: 9999;
 }
 
 @media screen and (max-width: 460px) {
