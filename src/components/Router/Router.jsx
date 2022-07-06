@@ -10,10 +10,10 @@ const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="MStories" element={<MStory />} />
-      <Route path="MNovels" element={<MNovel />} />
-      <Route path="MTechnologies" element={<MTech />} />
-      <Route path="MReligious" element={<MReligious />} />
+      <Route path="Myanmar_Stories" element={<MStory />} />
+      <Route path="Myanmar_Novels" element={<MNovel />} />
+      <Route path="Myanmar_Technologies" element={<MTech />} />
+      <Route path="Myanmar_Religious" element={<MReligious />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

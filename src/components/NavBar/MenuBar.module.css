@@ -9,8 +9,8 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  z-index: 9999;
   transition: var(--transition);
+  z-index: 9999;
 }
 .menuBar.active {
   right: 0;

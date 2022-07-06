@@ -37,6 +37,18 @@ const NavRight = ({ isOpen }) => {
             fontWeight: isActive && "bold",
           };
         }}
+        to="/contact"
+        className={`${styles.item} ${styles.orders}`}
+      >
+        Contact
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => {
+          return {
+            color: isActive && "#fff",
+            fontWeight: isActive && "bold",
+          };
+        }}
         to="/add-to-cart"
         className={styles.item}
       >

@@ -51,6 +51,23 @@ const MenuBar = ({ openMenu, onClose }) => {
               borderRadius: isActive && "10px",
             };
           }}
+          to="/contact"
+          className={styles.item}
+        >
+          Contact
+        </NavLink>
+        <NavLink
+          onClick={onClose}
+          style={({ isActive }) => {
+            return {
+              width: isActive && "100%",
+              textAlign: isActive && "center",
+              color: isActive && "#000",
+              fontWeight: isActive && "bold",
+              backgroundColor: isActive && "#f1f3f4",
+              borderRadius: isActive && "10px",
+            };
+          }}
           to="/login"
           className={styles.item}
         >

@@ -1,14 +1,14 @@
 .catBar {
   position: fixed;
-  top: 90px;
+  top: 60px;
   height: 40px;
   width: 100%;
-  background-color: yellow;
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  z-index: 9999;
+  z-index: 99;
 }
 .category {
   display: none;
@@ -21,12 +21,14 @@
 .divider {
   width: 2px;
   height: 20px;
-  background-color: black;
+  background-color: #fff;
   margin: 0 10px;
 }
 .item,
 .item:hover {
-  color: var(--third-color);
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .items {
   display: flex;
@@ -35,13 +37,15 @@
   padding-left: 40px;
 }
 .icon {
+  color: #fff;
   margin: 0 4px;
   transform: scale(0.8);
   cursor: pointer;
 }
 .catBar span {
+  color: #fff;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 }
 .sideBar {
@@ -54,7 +58,7 @@
   left: -320px;
   overflow-x: hidden;
   padding-bottom: 40px;
-  z-index: 999;
+  z-index: 9999;
   border-right: 1px solid gray;
   transition: var(--transition);
 }
@@ -71,7 +75,7 @@
   width: 100%;
   bottom: 0;
   height: 100vh;
-  z-index: 2;
+  z-index: 999;
   transition: var(--transition);
 }
 @media screen and (max-width: 800px) {
