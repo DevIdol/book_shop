@@ -8,6 +8,7 @@ const Home = () => {
   const location = useLocation();
   const pathName = location.pathname.split("/")[1];
   const [openMenu, setOpenMenu] = useState(false);
+  const all = pathName === "book_shop";
   const MStory = pathName === "Myanmar_Stories";
   const MNovel = pathName === "Myanmar_Novels";
   const MTech = pathName === "Myanmar_Technologies";
@@ -48,8 +49,8 @@ const Home = () => {
                 ? "Myanmar Books"
                 : EnglishBooks
                 ? "English Books"
-                : pathName
-              : "All"}
+                : all ? "All" : pathName
+              :"All"}
           </Link>
         </div>
       </div>
