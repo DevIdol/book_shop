@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../Home/Home";
+import Home from "../components/Home/Home";
 import NotFound from "../NotFound/NotFound";
-import MStory from "../Home/Books/MyanmarBooks/MStory/MStory";
-import MNovel from "../Home/Books/MyanmarBooks/MNovel/MNovel";
-import MTech from "../Home/Books/MyanmarBooks/MTechnology/MTech";
-import MReligious from "../Home/Books/MyanmarBooks/MReligious/MReligious";
+import MStory from "../components/Home/Books/MyanmarBooks/MStory/MStory";
+import MNovel from "../components/Home/Books/MyanmarBooks/MNovel/MNovel";
+import MTech from "../components/Home/Books/MyanmarBooks/MTechnology/MTech";
+import MReligious from "../components/Home/Books/MyanmarBooks/MReligious/MReligious";
 
 const Router = () => {
   return (

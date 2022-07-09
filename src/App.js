@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
-import Router from './components/Router/Router'
+import Router from './Router/Router'
 import CatBar from './components/CatBar/CatBar'
 
 function App() {

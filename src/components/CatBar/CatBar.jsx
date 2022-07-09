@@ -37,7 +37,7 @@ const Home = () => {
           <div className={styles.divider}></div>
         </div>
         <div className={styles.items}>
-          <Link to="/" className={styles.item}>
+          <Link to="/book_shop" className={styles.item}>
             Home
           </Link>
           <ArrowForwardIosIcon className={styles.icon} />
