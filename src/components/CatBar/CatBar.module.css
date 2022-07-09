@@ -26,6 +26,7 @@
 }
 .item,
 .item:hover {
+  font-size: 14px;
   color: #fff;
   font-weight: 600;
   text-transform: capitalize;
@@ -38,8 +39,7 @@
 }
 .icon {
   color: #fff;
-  margin: 0 4px;
-  transform: scale(0.8);
+  transform: scale(0.6);
   cursor: pointer;
 }
 .catBar span {
@@ -90,5 +90,13 @@
   }
   .sideBar {
     display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .item{
+    font-size: 12px;
+  }
+  .catBar span{
+    font-size: 12px;
   }
 }

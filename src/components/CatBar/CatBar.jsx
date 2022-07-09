@@ -8,6 +8,16 @@ const Home = () => {
   const location = useLocation();
   const pathName = location.pathname.split("/")[1];
   const [openMenu, setOpenMenu] = useState(false);
+  const MStory = pathName === "Myanmar_Stories";
+  const MNovel = pathName === "Myanmar_Novels";
+  const MTech = pathName === "Myanmar_Technologies";
+  const MReligious = pathName === "Myanmar_Religious";
+  const MyanmarBooks = MStory || MNovel || MTech || MReligious;
+  const EStory = pathName === "English_Stories";
+  const ENovel = pathName === "English_Novels";
+  const ETech = pathName === "English_Technologies";
+  const EReligious = pathName === "English_Religious";
+  const EnglishBooks = EStory || ENovel || ETech || EReligious;
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -34,6 +44,10 @@ const Home = () => {
             {pathName
               ? pathName === "add-to-cart"
                 ? "Cart"
+                : MyanmarBooks
+                ? "Myanmar Books"
+                : EnglishBooks
+                ? "English Books"
                 : pathName
               : "All"}
           </Link>
