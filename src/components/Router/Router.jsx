@@ -9,7 +9,7 @@ import MReligious from "../Home/Books/MyanmarBooks/MReligious/MReligious";
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/book_shop" element={<Home />} />
       <Route path="Myanmar_Stories" element={<MStory />} />
       <Route path="Myanmar_Novels" element={<MNovel />} />
       <Route path="Myanmar_Technologies" element={<MTech />} />
