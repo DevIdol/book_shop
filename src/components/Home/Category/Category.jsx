@@ -10,7 +10,7 @@ const Category = ({ onClose }) => {
   const engBooks = catitems.filter((eng) => eng.type === "English Books");
   return (
     <Container className={styles.categories}>
-      <h4 className={styles.catTitle}>Categories</h4>
+      <h1 className={styles.catTitle}>Categories</h1>
       <Accordion defaultActiveKey="0" flush className={styles.accordion}>
         <Accordion.Item eventKey="0" className={styles.accordion1}>
           <Accordion.Header>Myanmar Books</Accordion.Header>

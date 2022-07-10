@@ -1,9 +1,19 @@
+import { useState } from "react";
 import styles from "./Books.module.css";
+import Header from "./Header";
 
 const AllBook = () => {
+  const [showList, setShowList] = useState(false);
+  const toggleShowList = () => {
+    setShowList(!showList);
+  };
   return (
     <div className={styles.books}>
-      <h1 className={styles.headerTitle}>All Book</h1>
+      <Header
+        title="All Book"
+        showList={showList}
+        toggleShowList={toggleShowList}
+      />
     </div>
   );
 };
