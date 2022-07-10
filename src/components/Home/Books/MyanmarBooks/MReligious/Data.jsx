@@ -3,7 +3,7 @@ import styles from "../../Books.module.css";
 const Data = () => {
   return (
     <div className={styles.books}>
-      <h1>Myanmar Religious Books</h1>
+      <h1 className={styles.headerTitle}>ဘာသာရေး စာအုပ်များ</h1>
     </div>
   );
 };

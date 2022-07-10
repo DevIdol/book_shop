@@ -1,9 +1,19 @@
 .books {
-  padding-top: 100px;
+  padding-top: 120px;
   width: var(100% - 300px);
   margin-left: 300px;
 }
-
+.headerTitle{
+  background-color: var(--primary-color);
+  font-size: 24px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px 0px;
+  line-height: 1.6;
+}
 @media screen and (max-width: 800px) {
   .books {
     margin-left: 0;
