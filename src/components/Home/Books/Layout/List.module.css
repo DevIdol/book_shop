@@ -1,0 +1,14 @@
+.listView {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.list {
+    background-color: var(--secondary-color);
+  width: 280px;
+  height: 120px;
+  border: 1px solid gray;
+}
