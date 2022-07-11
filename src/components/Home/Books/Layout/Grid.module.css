@@ -8,7 +8,7 @@
 }
 .grid {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 158px;
+  width: 160px;
   height: 100%;
   transition: var(--transition);
 }
