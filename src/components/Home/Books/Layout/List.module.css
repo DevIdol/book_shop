@@ -7,7 +7,7 @@
   gap: 20px;
 }
 .list {
-  width: 310px;
+  width: 320px;
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
@@ -75,7 +75,7 @@
   padding: 0 4px;
 }
 
-@media screen and (max-width: 963px) {
+@media screen and (max-width: 983px) {
   .list {
     width: 270px;
   }
@@ -96,11 +96,11 @@
 }
 @media screen and (max-width: 583px) {
   .list {
-    width: 360px;
+    width: 250px;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 543px) {
   .list {
-    width: 310px;
+    width: 400px;
   }
 }
