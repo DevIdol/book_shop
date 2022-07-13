@@ -3,6 +3,7 @@ import SideBar from "../../../SideBar/SideBar";
 import Data from "./Data";
 
 const MNovel = () => {
+
   return (
     <Container fluid>
       <SideBar />

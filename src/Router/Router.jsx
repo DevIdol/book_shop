@@ -5,11 +5,13 @@ import MStory from "../components/Home/Books/MyanmarBooks/MStory/MStory";
 import MNovel from "../components/Home/Books/MyanmarBooks/MNovel/MNovel";
 import MTech from "../components/Home/Books/MyanmarBooks/MTechnology/MTech";
 import MReligious from "../components/Home/Books/MyanmarBooks/MReligious/MReligious";
+import ViewBooks from "../components/Home/Books/ViewBooks";
 
 const Router = () => {
   return (
     <Routes>
       <Route path="/book_shop" element={<Home />} />
+      <Route path="/book_shop/ViewBook" element={<ViewBooks/>} />
       <Route path="Myanmar_Stories" element={<MStory />} />
       <Route path="Myanmar_Novels" element={<MNovel />} />
       <Route path="Myanmar_Technologies" element={<MTech />} />

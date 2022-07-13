@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "../../Books.module.css";
 import Header from "../../Header";
-
+import Grid from "../../Layout/Grid";
+import List from "../../Layout/List";
 const Data = () => {
   const [showList, setShowList] = useState(false);
   const toggleShowList = () => {
@@ -14,13 +15,9 @@ const Data = () => {
         showList={showList}
         toggleShowList={toggleShowList}
       />
+      {showList ? <List /> : <Grid />}
     </div>
   );
-  // return (
-  //   <div className={styles.books}>
-  //     <h1 className={styles.headerTitle}></h1>
-  //   </div>
-  // );
 };
 
 export default Data;
