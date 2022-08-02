@@ -35,11 +35,17 @@
   font-weight: bold;
   line-height: 1.6;
 }
+.author{
+  line-height: 1.6;
+}
 .author,
-.pages {
+.pages,
+.price {
   font-size: 14px;
   font-weight: 200;
-  line-height: 1.6;
+}
+.price {
+  color: red;
 }
 
 .decrease,
@@ -121,15 +127,15 @@
 }
 
 @media screen and (max-width: 400px) {
-  .bookDesc{
+  .bookDesc {
     gap: 10px;
   }
 }
 @media screen and (max-width: 380px) {
-  .bookName{
+  .bookName {
     font-size: 16px;
   }
-  .bookImg{
+  .bookImg {
     width: 120px;
     height: 160px;
   }
