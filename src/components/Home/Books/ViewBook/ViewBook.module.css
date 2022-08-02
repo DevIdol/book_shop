@@ -1,0 +1,82 @@
+.books {
+  overflow: hidden;
+  padding-top: 140px;
+  width: var(100% - 300px);
+  margin-left: 300px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.bookImg {
+  width: 200px;
+  height: 260px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  padding: 2px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.bookImg:hover {
+  object-fit: cover;
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.amount {
+  padding-right: 16px;
+  font-size: 14px;
+}
+.bookName {
+  font-size: 18px;
+  font-weight: bold;
+}
+.author,
+.pages {
+  font-size: 14px;
+}
+
+.decrease,
+.increase {
+  border: 1px solid transparent;
+  background-color: #ccc;
+  font-weight: 500;
+  padding: 2px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.quantity {
+  padding: 0 10px;
+}
+.shopBtn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.shopNow {
+  background-color: tomato;
+}
+.addCart {
+  background-color: var(--primary-color);
+}
+
+.shopNow,
+.addCart {
+  border-radius: 4px;
+  padding: 6px 30px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+.shopNow:hover,
+.addCart:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 800px) {
+  .books {
+    margin-left: 0;
+    width: 100%;
+  }
+}

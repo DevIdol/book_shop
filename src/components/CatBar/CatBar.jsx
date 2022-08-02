@@ -7,6 +7,7 @@ import Category from "../Home/Category/Category";
 const Home = () => {
   const location = useLocation();
   const pathName = location.pathname.split("/")[1];
+  const pathNameTwo = location.pathname.split("/")[2];
   const [openMenu, setOpenMenu] = useState(false);
   const all = pathName === "book_shop";
   const MStory = pathName === "Myanmar_Stories";
@@ -19,6 +20,7 @@ const Home = () => {
   const ETech = pathName === "English_Technologies";
   const EReligious = pathName === "English_Religious";
   const EnglishBooks = EStory || ENovel || ETech || EReligious;
+  const viewBook = pathNameTwo === "ViewBook";
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -49,8 +51,12 @@ const Home = () => {
                 ? "Myanmar Books"
                 : EnglishBooks
                 ? "English Books"
-                : all ? "All" : pathName
-              :"All"}
+                : viewBook
+                ? "ViewBook"
+                : all
+                ? "All"
+                : pathName
+              : "All"}
           </Link>
         </div>
       </div>
