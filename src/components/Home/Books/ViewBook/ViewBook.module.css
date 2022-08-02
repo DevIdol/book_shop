@@ -6,11 +6,15 @@
   padding-bottom: 40px;
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+}
+.bookDesc {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
 }
 .bookImg {
-  width: 200px;
-  height: 260px;
+  width: 170px;
+  height: 210px;
   border-radius: 6px;
   border: 1px solid var(--primary-color);
   padding: 2px;
@@ -29,10 +33,13 @@
 .bookName {
   font-size: 18px;
   font-weight: bold;
+  line-height: 1.5;
 }
 .author,
 .pages {
   font-size: 14px;
+  font-weight: 200;
+  line-height: 1.5;
 }
 
 .decrease,
@@ -47,11 +54,14 @@
 .quantity {
   padding: 0 10px;
 }
-.shopBtn {
+.shopBtnMax {
   margin-top: 40px;
   display: flex;
   align-items: center;
   gap: 30px;
+}
+.shopBtnMin {
+  display: none;
 }
 .shopNow {
   background-color: tomato;
@@ -74,9 +84,53 @@
   transform: scale(1.02);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+@media screen and (max-width: 960px) {
+  .bookImg {
+    width: 150px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 846px) {
+  .books {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bookImg {
+    height: 180px;
+  }
+  .shopBtnMax {
+    display: none;
+  }
+  .shopBtnMin {
+    display: block;
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .books {
     margin-left: 0;
     width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bookDesc{
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .bookName{
+    font-size: 16px;
+  }
+  .bookImg{
+    width: 120px;
+    height: 160px;
   }
 }

@@ -16,6 +16,9 @@
   --primary-font: #fff;
   --hover-color: #f1f3f4;
 }
+p{
+  line-height: 0.9;
+}
 html {
   scroll-behavior: smooth;
 }
