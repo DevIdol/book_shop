@@ -10,7 +10,7 @@
 .bookDesc {
   display: flex;
   justify-content: flex-start;
-  gap: 40px;
+  gap: 30px;
 }
 .bookImg {
   width: 170px;
@@ -33,13 +33,13 @@
 .bookName {
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .author,
 .pages {
   font-size: 14px;
   font-weight: 200;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .decrease,
@@ -122,7 +122,7 @@
 
 @media screen and (max-width: 400px) {
   .bookDesc{
-    gap: 20px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 380px) {
