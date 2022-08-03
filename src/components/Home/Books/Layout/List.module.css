@@ -93,7 +93,8 @@
   .list {
     width: 400px;
   }
-}@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 800px) {
   .list {
     width: 340px;
   }
@@ -108,33 +109,3 @@
     width: 400px;
   }
 }
-
-/* @media screen and (max-width: 983px) {
-  .list {
-    width: 270px;
-  }
-}
-@media screen and (max-width: 883px) {
-  .list {
-    width: 360px;
-  }
-}@media screen and (max-width: 800px) {
-  .list {
-    width: 310px;
-  }
-}
-@media screen and (max-width: 663px) {
-  .list {
-    width: 270px;
-  }
-}
-@media screen and (max-width: 583px) {
-  .list {
-    width: 250px;
-  }
-}
-@media screen and (max-width: 543px) {
-  .list {
-    width: 400px;
-  }
-} */
