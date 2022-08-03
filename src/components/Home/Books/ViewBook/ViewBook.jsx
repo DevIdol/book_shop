@@ -56,6 +56,15 @@ const ViewBook = () => {
         <button className={styles.shopNow}>Shop Now</button>
         <button className={styles.addCart}>Add To Cart</button>
       </div>
+      <div className={styles.productDetail}>
+        <h3>Product Details</h3>
+        <p style={{lineHeight: 1.6}}><span className={styles.title}>Title:</span>ဂရုမစိုက်ခြင်း အနုပညာ</p>
+        <p style={{lineHeight: 1.6}}><span className={styles.author}>Author:</span>ဆရာချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
+        <p><span className={styles.page}>Pages:</span>426</p>
+        <p><span className={styles.type}>Type:</span>Story</p>
+        <p><span className={styles.prices}>Price:</span>$ 24.22</p>
+
+      </div>
     </div>
   );
 };
