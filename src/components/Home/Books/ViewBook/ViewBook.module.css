@@ -47,6 +47,7 @@
 }
 .price {
   color: red;
+  font-weight: bold;
 }
 
 .decrease,
@@ -60,6 +61,7 @@
 }
 .quantity {
   padding: 0 10px;
+  font-weight: bold;
 }
 .shopBtnMax {
   margin-top: 40px;
@@ -151,7 +153,7 @@
 
 @media screen and (max-width: 400px) {
   .bookDesc {
-    gap: 10px;
+    gap: 6px;
   }
 }
 @media screen and (max-width: 380px) {
