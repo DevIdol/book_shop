@@ -11,12 +11,11 @@
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
 }
 .img {
   width: 106px;
-  height: 120px;
+  height: 140px;
   padding: 2px;
   border-radius: 6px;
   cursor: pointer;
@@ -76,7 +75,7 @@
   padding: 0 4px;
 }
 
-@media screen and (max-width: 983px) {
+/* @media screen and (max-width: 983px) {
   .list {
     width: 270px;
   }
@@ -104,4 +103,4 @@
   .list {
     width: 400px;
   }
-}
+} */
