@@ -4,6 +4,7 @@ import styles from "./Books.module.css";
 import Header from "./Header";
 import Grid from "./Layout/Grid";
 import List from "./Layout/List";
+import AutoSwiper from "./HeaderImg";
 const HeaderTitle = ({ title, link }) => {
   return (
     <div className={styles.header}>
@@ -22,11 +23,13 @@ const AllBook = () => {
   };
   return (
     <div className={styles.books}>
+       <AutoSwiper />
       <Header
         title="All Book"
         showList={showList}
         toggleShowList={toggleShowList}
       />
+     
       {showList ? (
         <Fragment>
           <HeaderTitle title="Myanmar Books" link="/book_shop" />

@@ -2,10 +2,14 @@ import { FaList } from "react-icons/fa";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import styles from "./Header.module.css";
 import Tooltip from "@mui/material/Tooltip";
+import { Fragment } from "react";
+
 
 const Header = ({ title, showList, toggleShowList }) => {
   return (
-    <div className={styles.header}>
+    <Fragment>
+     
+      <div className={styles.header}>
       <h1 className={styles.headerTitle}>{title}</h1>
       <div className={styles.headerRight}>
         <span className={styles.listIcon} onClick={toggleShowList}>
@@ -25,6 +29,7 @@ const Header = ({ title, showList, toggleShowList }) => {
         </span>
       </div>
     </div>
+    </Fragment>
   );
 };
 

@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  border-radius: 60px 0px;
+ margin-top: 10px;
+  border-radius: 10px;
 }
 .headerTitle {
   color: #fff;
@@ -15,6 +16,10 @@
 }
 
 .listIcon {
+  background-color: gray;
+  border-radius: 4px;
+  text-align: center;
+  padding: 2px 8px 4px 8px;
   color: #fff;
   cursor: pointer;
 }
