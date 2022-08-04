@@ -76,8 +76,16 @@
 .shopNow {
   background-color: tomato;
 }
+.shopNow:hover{
+  background-color: rgb(219, 68, 42);
+  transition: var(--transition);
+}
 .addCart {
   background-color: var(--primary-color);
+}
+.addCart:hover{
+  background-color: #203d3c;
+  transition: var(--transition);
 }
 
 .shopNow,
