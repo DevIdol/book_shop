@@ -4,9 +4,10 @@
   width: var(100% - 300px);
   margin-left: 300px;
   padding-bottom: 40px;
+}
+.viewBook {
   display: flex;
-  gap: 30px;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 .bookDesc {
   display: flex;
@@ -55,7 +56,7 @@
   border: 1px solid transparent;
   background-color: #ccc;
   font-weight: 500;
-  padding: 2px 12px;
+  padding: 6px 12px;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -102,18 +103,34 @@
   flex-direction: column;
 }
 
-.productDetail h3{
+.productDetail h3 {
   font-size: 18px;
   font-weight: 600;
   padding-bottom: 10px;
 }
-.title, .author, .page, .type, .prices{
+.title,
+.author,
+.page,
+.type,
+.prices {
   font-size: 14px;
   font-weight: 500;
   padding-right: 10px;
 }
+.releaseBook {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.releaseBook::-webkit-scrollbar {
+  height: 10px;
+}
+
 @media screen and (max-width: 1165px) {
-  .books{
+  .viewBook {
+    gap: 20px;
     justify-content: center;
     flex-direction: column;
   }
@@ -126,7 +143,7 @@
   }
 }
 @media screen and (max-width: 846px) {
-  .books {
+  .viewBook {
     flex-direction: column;
     justify-content: center;
     align-items: center;

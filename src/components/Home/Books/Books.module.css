@@ -4,7 +4,44 @@
   margin-left: 300px;
   padding-bottom: 40px;
 }
-
+.header {
+  padding: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: 10px;
+}
+.header .viewAll {
+  padding: 4px 16px;
+  background-color: tomato;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.header .viewAll:hover {
+  transition: var(--transition);
+  background-color: rgb(226, 82, 57);
+}
+.gridView {
+  display: flex;
+  overflow-y: hidden;
+  gap: 6px;
+}
+.gridView::-webkit-scrollbar {
+  height: 12px;
+}
+.listView {
+  display: flex;
+  overflow-y: hidden;
+  gap: 6px;
+}
+.listView::-webkit-scrollbar {
+  height: 12px;
+}
 @media screen and (max-width: 800px) {
   .books {
     margin-left: 0;

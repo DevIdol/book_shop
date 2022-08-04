@@ -1,20 +1,14 @@
-.listView {
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.bookDesc {
+  width: 200px;
 }
 .list {
-  width: 340px;
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
 }
 .img {
-  width: 106px;
+  width: 120px;
   height: 140px;
   padding: 2px;
   border-radius: 6px;
@@ -73,39 +67,4 @@
   font-weight: 500;
   margin-top: -8px;
   padding: 0 4px;
-}
-@media screen and (max-width: 1384px) {
-  .list {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 1264px) {
-  .list {
-    width: 340px;
-  }
-}
-@media screen and (max-width: 10244px) {
-  .list {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 943px) {
-  .list {
-    width: 400px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .list {
-    width: 340px;
-  }
-}
-@media screen and (max-width: 723px) {
-  .list {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 643px) {
-  .list {
-    width: 400px;
-  }
 }

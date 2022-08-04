@@ -4,59 +4,17 @@ import styles from "./List.module.css";
 
 const List = () => {
   return (
-    <div className={styles.listView}>
-      <div className={styles.list}>
-        <img className={styles.img} src={bookImg} alt="bookImg" />
-        <div>
-          <p>
-            <Link to="/book_shop/ViewBook" className={styles.title}>
-              ဂရုမစိုက်ခြင်း အနုပညာ
-            </Link>
-          </p>
+    <div className={styles.list}>
+      <img className={styles.img} src={bookImg} alt="bookImg" />
+      <div className={styles.bookDesc}>
+        <p>
+          <Link to="/book_shop/ViewBook" className={styles.title}>
+            ဂရုမစိုက်ခြင်း အနုပညာ
+          </Link>
+        </p>
 
-          <p className={styles.author}>ဆရာ ချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-          <p className={styles.price}>Price: 4500 MMK</p>
-        </div>
-      </div>{" "}
-      <div className={styles.list}>
-        <img className={styles.img} src={bookImg} alt="bookImg" />
-        <div>
-          <p className={styles.title}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
-          <p className={styles.author}>ဆရာ ချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-          <p className={styles.price}>Price: 4500 MMK</p>
-        </div>
-      </div>{" "}
-      <div className={styles.list}>
-        <img className={styles.img} src={bookImg} alt="bookImg" />
-        <div>
-          <p className={styles.title}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
-          <p className={styles.author}>ဆရာ ချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-          <p className={styles.price}>Price: 4500 MMK</p>
-        </div>
-      </div>{" "}
-      <div className={styles.list}>
-        <img className={styles.img} src={bookImg} alt="bookImg" />
-        <div>
-          <p className={styles.title}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
-          <p className={styles.author}>ဆရာ ချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-          <p className={styles.price}>Price: 4500 MMK</p>
-        </div>
-      </div>{" "}
-      <div className={styles.list}>
-        <img className={styles.img} src={bookImg} alt="bookImg" />
-        <div>
-          <p className={styles.title}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
-          <p className={styles.author}>ဆရာ ချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-          <p className={styles.price}>Price: 4500 MMK</p>
-        </div>
-      </div>{" "}
-      <div className={styles.list}>
-        <img className={styles.img} src={bookImg} alt="bookImg" />
-        <div>
-          <p className={styles.title}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
-          <p className={styles.author}>ဆရာ ချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-          <p className={styles.price}>Price: 4500 MMK</p>
-        </div>
+        <p className={styles.author}>ဆရာ ချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
+        <p className={styles.price}>Price: 4500 MMK</p>
       </div>
     </div>
   );
