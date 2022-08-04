@@ -29,7 +29,7 @@ const AllBook = () => {
       />
       {showList ? (
         <Fragment>
-          <HeaderTitle title="Myanmar Books" link="/" />
+          <HeaderTitle title="Myanmar Books" link="/book-shop" />
           <div className={styles.listView}>
             <List />
             <List />
@@ -42,7 +42,7 @@ const AllBook = () => {
             <List />
             <List />
           </div>
-          <HeaderTitle title="English Books" link="/" />
+          <HeaderTitle title="English Books" link="/book-shop" />
           <div className={styles.listView}>
             <List />
             <List />
@@ -58,7 +58,7 @@ const AllBook = () => {
         </Fragment>
       ) : (
         <Fragment>
-          <HeaderTitle title="Myanmar Books" link="/" />
+          <HeaderTitle title="Myanmar Books" link="/book-shop" />
           <div className={styles.gridView}>
             <Grid />
             <Grid />
@@ -74,7 +74,7 @@ const AllBook = () => {
             <Grid />
             <Grid />
           </div>
-          <HeaderTitle title="English Books" link="/" />
+          <HeaderTitle title="English Books" link="/book-shop" />
           <div className={styles.gridView}>
             <Grid />
             <Grid />
