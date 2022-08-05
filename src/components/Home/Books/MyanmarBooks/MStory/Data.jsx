@@ -11,7 +11,7 @@ const Data = () => {
   return (
     <div className={styles.books}>
       <div className={styles.newRelease}>
-        <h3>Most Pouplar</h3>
+        <h3>Most Popular</h3>
         <div className={styles.releaseBook}>
           <List />
           <List />
