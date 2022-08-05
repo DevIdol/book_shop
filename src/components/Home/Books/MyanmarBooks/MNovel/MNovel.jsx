@@ -7,6 +7,7 @@ const MNovel = () => {
   return (
     <Container fluid>
       <SideBar />
+
       <Data />
     </Container>
   );

@@ -12,7 +12,7 @@
 .bookDesc {
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 20px;
 }
 .bookImg {
   width: 170px;
@@ -76,14 +76,14 @@
 .shopNow {
   background-color: tomato;
 }
-.shopNow:hover{
+.shopNow:hover {
   background-color: rgb(219, 68, 42);
   transition: var(--transition);
 }
 .addCart {
   background-color: var(--primary-color);
 }
-.addCart:hover{
+.addCart:hover {
   background-color: #203d3c;
   transition: var(--transition);
 }
@@ -148,6 +148,11 @@
   .bookImg {
     width: 150px;
     height: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .books {
+    padding-top: 164px;
   }
 }
 @media screen and (max-width: 846px) {

@@ -1,0 +1,32 @@
+.books {
+  padding-top: 110px;
+  width: var(100% - 300px);
+  margin-left: 300px;
+  padding-bottom: 40px;
+}
+
+.releaseBook {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.releaseBook::-webkit-scrollbar {
+  height: 10px;
+}
+.list, .grid{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+@media screen and (max-width: 800px) {
+  .books {
+    padding-top: 160px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
