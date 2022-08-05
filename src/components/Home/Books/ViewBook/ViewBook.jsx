@@ -29,9 +29,11 @@ const ViewBook = () => {
                   style={{
                     backgroundColor: quantity <= 1 && "transparent",
                     color: quantity <= 1 && "#ccc",
+                    cursor: quantity <=1 && "not-allowed"
                   }}
                   className={styles.decrease}
                   onClick={() => handleQuantity("dec")}
+                  disabled={ quantity <= 1 && true}
                 >
                   -
                 </button>
@@ -40,9 +42,11 @@ const ViewBook = () => {
                   style={{
                     backgroundColor: quantity >= 4 && "transparent",
                     color: quantity >= 4 && "#ccc",
+                    cursor: quantity >=4 && "not-allowed"
                   }}
                   className={styles.increase}
                   onClick={() => handleQuantity("inc")}
+                  disabled={quantity >=4 && true}
                 >
                   +
                 </button>

@@ -1,6 +1,6 @@
 .catBar {
   position: fixed;
-  top: 60px;
+  top: 70px;
   height: 40px;
   width: 100%;
   background-color: var(--secondary-color);
@@ -79,6 +79,9 @@
   transition: var(--transition);
 }
 @media screen and (max-width: 800px) {
+  .catBar{
+    top: 110px;
+  }
   .category {
     transition: var(--transition);
     display: flex;

@@ -2,3 +2,11 @@
     font-size: 26px;
     color: var(--primary-font);
 }
+@media screen and (max-width: 800px) {
+    .logo{
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }    
+
+ }

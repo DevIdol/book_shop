@@ -12,8 +12,11 @@
 .badge {
   font-weight: 600;
 }
-.cart {
+.cart,
+.account,
+.menuIcon {
   color: var(--primary-font) !important;
+  transform: scale(1.2);
 }
 .item {
   color: var(--primary-font);
@@ -21,7 +24,7 @@
   font-weight: 500;
   font-size: 16px;
 }
-.item:hover{
+.item:hover {
   color: var(--primary-font);
 }
 .menu {
@@ -29,14 +32,19 @@
 }
 
 @media screen and (max-width: 800px) {
-  .navRight{
-    gap: 24px;
+  .navRight {
+    padding-top: 16px;
+    padding-right: 12px;
+    gap: 16px;
   }
-  .login,
+
   .orders {
     display: none;
   }
   .menu {
     display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
   }
 }

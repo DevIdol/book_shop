@@ -50,22 +50,25 @@ background: rgba(255,0,0,0.4);
   padding: 0 !important;
 }
 .swiper-button-prev{
-  margin-left: -24px;
+  margin-left: -18px;
 }
 .swiper-button-next{
-  margin-right: -24px;
+  margin-right: -18px;
 }
 .swiper-button-prev, .swiper-button-next {
   color: var(--primary-color) !important;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 30px !important;
   border-radius: 50%;
-  transform: scale(0.5);
+  transform: scale(0.7);
+  font-weight: 500;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .swiper-pagination-bullet-active{
   background-color: red !important;
 }
-@media screen and (max-width: 420px) {
+/* @media screen and (max-width: 420px) {
   .MuiButtonBase-root {
     width: 20px !important;
   }
@@ -76,7 +79,7 @@ background: rgba(255,0,0,0.4);
   .MuiInputBase-root {
     width: 150px !important;
   }
-}
+} */
 .accordion-button:focus{
   border-radius: 6px !important;
   border: 1px solid var(--primary-color) !important;
@@ -89,7 +92,7 @@ background: rgba(255,0,0,0.4);
   background-color: transparent !important;
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .MuiInputBase-root {
     width: 120px !important;
   }
@@ -104,4 +107,4 @@ background: rgba(255,0,0,0.4);
   .MuiInputBase-root {
     width: 90px !important;
   }
-}
+} */
