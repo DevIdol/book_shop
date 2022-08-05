@@ -46,13 +46,13 @@ const Home = () => {
           <Link to={`/${pathName}`} className={styles.item}>
             {pathName
               ? pathName === "add-to-cart"
-                ? "Cart"
+                ? "Shopping Cart"
                 : MyanmarBooks
                 ? "Myanmar Books"
                 : EnglishBooks
                 ? "English Books"
                 : viewBook
-                ? "ViewBook"
+                ? "View Book"
                 : all
                 ? "All"
                 : pathName
