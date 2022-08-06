@@ -1,11 +1,12 @@
 .logo{
     font-size: 26px;
     color: var(--primary-font);
+    font-family: 'Nosifer';
 }
 @media screen and (max-width: 800px) {
     .logo{
         position: absolute;
-        top: 8px;
+        top: 10px;
         left: 10px;
     }    
 

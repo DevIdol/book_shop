@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Noto+Sans+Myanmar:wght@300;400&family=Noto+Serif+Myanmar:wght@300&family=Oswald:wght@300;600&family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@300;500&family=Ribeye&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: 0;
   text-decoration: none !important;
-  font-family: 'Playfair', 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Noto Sans Myanmar', 'sans-serif';
   list-style: none;
 }
 :root {
@@ -16,7 +16,7 @@
   --primary-font: #fff;
   --hover-color: #f1f3f4;
 }
-p{
+p {
   line-height: 0.9;
 }
 html {
@@ -30,7 +30,7 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
@@ -39,33 +39,35 @@ html {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #ccc ;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  background: #ccc;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-background: rgba(255,0,0,0.4); 
+  background: rgba(255, 0, 0, 0.4);
 }
 
 .MuiInputBase-root {
   padding: 0 !important;
 }
-.swiper-button-prev{
+.swiper-button-prev {
   margin-left: -18px;
 }
-.swiper-button-next{
+.swiper-button-next {
   margin-right: -18px;
 }
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: var(--primary-color) !important;
   padding: 30px !important;
   border-radius: 50%;
   transform: scale(0.7);
   font-weight: 500;
 }
-.swiper-button-prev:hover, .swiper-button-next:hover{
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: red !important;
 }
 /* @media screen and (max-width: 420px) {
@@ -80,14 +82,14 @@ background: rgba(255,0,0,0.4);
     width: 150px !important;
   }
 } */
-.accordion-button:focus{
+.accordion-button:focus {
   border-radius: 6px !important;
   border: 1px solid var(--primary-color) !important;
   border-color: var(--primary-color) !important;
   box-shadow: none !important;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   color: #4e1d04 !important;
   background-color: transparent !important;
 }

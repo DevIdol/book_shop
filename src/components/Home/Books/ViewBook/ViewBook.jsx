@@ -2,6 +2,7 @@ import styles from "./ViewBook.module.css";
 import img from "../../../../assets/img.jpg";
 import { useState } from "react";
 import Grid from "../Layout/Grid";
+import { books } from "../Data";
 
 const ViewBook = () => {
   const [quantity, setQuantity] = useState(1);
@@ -13,6 +14,7 @@ const ViewBook = () => {
       quantity < 4 && setQuantity((pre) => pre + 1);
     }
   };
+  const SliceBooks = books.slice(0).reverse();
   return (
     <div className={styles.books}>
       <div className={styles.viewBook}>
@@ -29,11 +31,11 @@ const ViewBook = () => {
                   style={{
                     backgroundColor: quantity <= 1 && "transparent",
                     color: quantity <= 1 && "#ccc",
-                    cursor: quantity <=1 && "not-allowed"
+                    cursor: quantity <= 1 && "not-allowed",
                   }}
                   className={styles.decrease}
                   onClick={() => handleQuantity("dec")}
-                  disabled={ quantity <= 1 && true}
+                  disabled={quantity <= 1 && true}
                 >
                   -
                 </button>
@@ -42,11 +44,11 @@ const ViewBook = () => {
                   style={{
                     backgroundColor: quantity >= 4 && "transparent",
                     color: quantity >= 4 && "#ccc",
-                    cursor: quantity >=4 && "not-allowed"
+                    cursor: quantity >= 4 && "not-allowed",
                   }}
                   className={styles.increase}
                   onClick={() => handleQuantity("inc")}
-                  disabled={quantity >=4 && true}
+                  disabled={quantity >= 4 && true}
                 >
                   +
                 </button>
@@ -86,13 +88,15 @@ const ViewBook = () => {
       <div className={styles.newRelease}>
         <h3>New Releases</h3>
         <div className={styles.releaseBook}>
-          <Grid />
-          <Grid />
-          <Grid />
-          <Grid />
-          <Grid />
-          <Grid />
-          <Grid />
+          {SliceBooks.slice(0, 6).map(({ id, img, title, author, price }) => (
+            <Grid
+              key={id}
+              img={img}
+              title={title}
+              author={author}
+              price={price}
+            />
+          ))}
         </div>
       </div>
     </div>

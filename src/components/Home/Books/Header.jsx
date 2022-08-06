@@ -12,13 +12,13 @@ const Header = ({ title, showList, toggleShowList }) => {
         <div className={styles.headerRight}>
           <span className={styles.listIcon} onClick={toggleShowList}>
             {showList ? (
-              <Tooltip title="View Grid" arrow>
+              <Tooltip title="View Grid" placement="left-start" arrow>
                 <span>
                   <BsFillGrid3X3GapFill size={16} />
                 </span>
               </Tooltip>
             ) : (
-              <Tooltip title="View List" arrow>
+              <Tooltip title="View List" placement="left-start" arrow>
                 <span>
                   <FaList size={16} />
                 </span>

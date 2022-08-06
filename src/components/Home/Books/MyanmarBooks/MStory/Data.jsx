@@ -3,23 +3,30 @@ import styles from "../Data.module.css";
 import Header from "../../Header";
 import Grid from "../../Layout/Grid";
 import List from "../../Layout/List";
+import { books } from "../../Data";
 const Data = () => {
   const [showList, setShowList] = useState(false);
   const toggleShowList = () => {
     setShowList(!showList);
   };
+  const MBooks = books
+    .slice(0)
+    .reverse()
+    .filter((mya) => mya.type === "myanmar");
   return (
     <div className={styles.books}>
       <div className={styles.newRelease}>
         <h3>Most Popular</h3>
         <div className={styles.releaseBook}>
-          <List />
-          <List />
-          <List />
-          <List />
-          <List />
-          <List />
-          <List />
+          {MBooks.slice(0, 6).map(({ id, img, title, author, price }) => (
+            <List
+              key={id}
+              img={img}
+              title={title}
+              author={author}
+              price={price}
+            />
+          ))}
         </div>
       </div>
       <Header
@@ -27,24 +34,29 @@ const Data = () => {
         showList={showList}
         toggleShowList={toggleShowList}
       />
-    {showList ? (
+      {showList ? (
         <div className={styles.list}>
-          <List />
-          <List />
-          <List />
-          <List />
-          <List />
-          <List />
-          <List />
+          {MBooks.slice(0, 6).map(({ id, img, title, author, price }) => (
+            <List
+              key={id}
+              img={img}
+              title={title}
+              author={author}
+              price={price}
+            />
+          ))}
         </div>
       ) : (
         <div className={styles.grid}>
-          <Grid />
-          <Grid />
-          <Grid />
-          <Grid />
-          <Grid />
-          <Grid />
+          {MBooks.slice(0, 6).map(({ id, img, title, author, price }) => (
+            <Grid
+              key={id}
+              img={img}
+              title={title}
+              author={author}
+              price={price}
+            />
+          ))}
         </div>
       )}
     </div>

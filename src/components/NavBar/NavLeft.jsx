@@ -5,8 +5,8 @@ import styles from "./NavLeft.module.css";
 const NavLeft = () => {
   return (
     <Link to="/book_shop">
-      <Tooltip title="Online Book Shop" arrow>
-        <h1 className={styles.logo}>𝓞𝓑𝓢</h1>
+      <Tooltip title="Online Book Shop" placement="right-start" arrow>
+        <h1 className={styles.logo}>OBS</h1>
       </Tooltip>
     </Link>
   );

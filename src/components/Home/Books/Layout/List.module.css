@@ -32,10 +32,10 @@
   -webkit-box-orient: vertical;
   cursor: pointer;
   transition: var(--transition);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 .title:hover {
-  line-height: 1.6;
+  line-height: 1.8;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
@@ -57,7 +57,7 @@
   -webkit-box-orient: vertical;
   cursor: pointer;
   transition: var(--transition);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .price {
