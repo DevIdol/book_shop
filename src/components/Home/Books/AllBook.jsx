@@ -5,6 +5,7 @@ import Header from "./Header";
 import Grid from "./Layout/Grid";
 import List from "./Layout/List";
 import AutoSwiper from "./HeaderImg";
+import { books } from "./Data";
 const HeaderTitle = ({ title, link }) => {
   return (
     <div className={styles.header}>
@@ -21,77 +22,76 @@ const AllBook = () => {
   const toggleShowList = () => {
     setShowList(!showList);
   };
+  const MBooks = books
+    .slice(0)
+    .reverse()
+    .filter((mya) => mya.type === "myanmar");
+  const EBooks = books
+    .slice(0)
+    .reverse()
+    .filter((en) => en.type === "english");
+
   return (
     <div className={styles.books}>
-       <AutoSwiper />
+      <AutoSwiper />
       <Header
         title="All Book"
         showList={showList}
         toggleShowList={toggleShowList}
       />
-     
+
       {showList ? (
         <Fragment>
           <HeaderTitle title="Myanmar Books" link="/book_shop" />
           <div className={styles.listView}>
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
+            {MBooks.slice(0,6).map(({ id, img, title, author, price }) => (
+              <List
+                key={id}
+                img={img}
+                title={title}
+                author={author}
+                price={price}
+              />
+            ))}
           </div>
           <HeaderTitle title="English Books" link="/book_shop" />
           <div className={styles.listView}>
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
-            <List />
+            {EBooks.slice(0,6).map(({ id, img, title, author, price }) => (
+              <List
+                key={id}
+                img={img}
+                title={title}
+                author={author}
+                price={price}
+              />
+            ))}
           </div>
         </Fragment>
       ) : (
         <Fragment>
           <HeaderTitle title="Myanmar Books" link="/book_shop" />
           <div className={styles.gridView}>
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
+            {MBooks.slice(0,6).map(({ id, img, title, author, price }) => (
+              <Grid
+                key={id}
+                img={img}
+                title={title}
+                author={author}
+                price={price}
+              />
+            ))}
           </div>
           <HeaderTitle title="English Books" link="/book_shop" />
           <div className={styles.gridView}>
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
-            <Grid />
+            {EBooks.slice(0,6).map(({ id, img, title, author, price }) => (
+              <Grid
+                key={id}
+                img={img}
+                title={title}
+                author={author}
+                price={price}
+              />
+            ))}
           </div>
         </Fragment>
       )}

@@ -1,20 +1,19 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
-import bookImg from "../../../../assets/img.jpg";
 import styles from "./Grid.module.css";
 
-const Grid = () => {
+const Grid = ({img, title, author, price}) => {
   return (
     <Fragment>
       <div className={styles.grid}>
-        <img className={styles.img} src={bookImg} alt="bookImg" />
+        <img className={styles.img} src={img} alt="bookImg" />
         <p>
           <Link to="/book_shop/ViewBook" className={styles.title}>
-            ဂရုမစိုက်ခြင်း အနုပညာ
+          {title}
           </Link>
         </p>
-        <p className={styles.author}>ဆရာ ချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-        <p className={styles.price}>Price: 4500 MMK</p>
+        <p className={styles.author}>{author}</p>
+        <p className={styles.price}>Price: {price} MMK</p>
       </div>
     </Fragment>
   );
