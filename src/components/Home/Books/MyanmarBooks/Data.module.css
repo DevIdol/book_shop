@@ -15,14 +15,16 @@
 .releaseBook::-webkit-scrollbar {
   height: 10px;
 }
-.list, .grid{
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+.list,
+.grid {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
+
 @media screen and (max-width: 800px) {
   .books {
     padding-top: 160px;

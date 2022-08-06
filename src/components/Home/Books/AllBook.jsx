@@ -56,7 +56,7 @@ const AllBook = () => {
           </div>
           <HeaderTitle title="English Books" link="/book_shop" />
           <div className={styles.listView}>
-            {EBooks.slice(0,6).map(({ id, img, title, author, price }) => (
+            {EBooks.map(({ id, img, title, author, price }) => (
               <List
                 key={id}
                 img={img}
@@ -71,7 +71,7 @@ const AllBook = () => {
         <Fragment>
           <HeaderTitle title="Myanmar Books" link="/book_shop" />
           <div className={styles.gridView}>
-            {MBooks.slice(0,6).map(({ id, img, title, author, price }) => (
+            {MBooks.map(({ id, img, title, author, price }) => (
               <Grid
                 key={id}
                 img={img}
@@ -83,7 +83,7 @@ const AllBook = () => {
           </div>
           <HeaderTitle title="English Books" link="/book_shop" />
           <div className={styles.gridView}>
-            {EBooks.slice(0,6).map(({ id, img, title, author, price }) => (
+            {EBooks.map(({ id, img, title, author, price }) => (
               <Grid
                 key={id}
                 img={img}

@@ -35,8 +35,10 @@
   height: 12px;
 }
 .listView {
+  width: 100%;
   display: flex;
   overflow-y: hidden;
+  white-space: nowrap;
   gap: 6px;
 }
 .listView::-webkit-scrollbar {
