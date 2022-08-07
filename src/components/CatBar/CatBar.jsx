@@ -10,17 +10,17 @@ const Home = () => {
   const pathNameTwo = location.pathname.split("/")[2];
   const [openMenu, setOpenMenu] = useState(false);
   const all = pathName === "book_shop";
-  const MStory = pathName === "Myanmar_Stories";
-  const MNovel = pathName === "Myanmar_Novels";
-  const MTech = pathName === "Myanmar_Technologies";
-  const MReligious = pathName === "Myanmar_Religious";
+  const MStory = pathNameTwo === "myanmar_stories";
+  const MNovel = pathNameTwo === "myanmar_novels";
+  const MTech = pathNameTwo === "myanmar_technologies";
+  const MReligious = pathNameTwo === "myanmar_religious";
   const MyanmarBooks = MStory || MNovel || MTech || MReligious;
-  const EStory = pathName === "English_Stories";
-  const ENovel = pathName === "English_Novels";
-  const ETech = pathName === "English_Technologies";
-  const EReligious = pathName === "English_Religious";
+  const EStory = pathNameTwo === "english_stories";
+  const ENovel = pathNameTwo === "english_novels";
+  const ETech = pathNameTwo === "english_technologies";
+  const EReligious = pathNameTwo === "english_religious";
   const EnglishBooks = EStory || ENovel || ETech || EReligious;
-  const viewBook = pathNameTwo === "ViewBook";
+  const viewBook = pathNameTwo === "view_book";
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);

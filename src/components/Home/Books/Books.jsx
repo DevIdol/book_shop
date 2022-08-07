@@ -10,14 +10,14 @@ const HeaderTitle = ({ title, link }) => {
   return (
     <div className={styles.header}>
       <h3>{title}</h3>
-      <Link className={styles.viewAll} to={link}>
+      <Link className={styles.viewAll} to={`/book_shop/${link}`}>
         View All
       </Link>
     </div>
   );
 };
 
-const AllBook = () => {
+const Books = () => {
   const [showList, setShowList] = useState(false);
   const toggleShowList = () => {
     setShowList(!showList);
@@ -42,7 +42,7 @@ const AllBook = () => {
 
       {showList ? (
         <Fragment>
-          <HeaderTitle title="Myanmar Books" link="/book_shop" />
+          <HeaderTitle title="Myanmar Books" link="myanmar_books" />
           <div className={styles.listView}>
             {MBooks.slice(0,6).map(({ id, img, title, author, price }) => (
               <List
@@ -54,7 +54,7 @@ const AllBook = () => {
               />
             ))}
           </div>
-          <HeaderTitle title="English Books" link="/book_shop" />
+          <HeaderTitle title="English Books" link="english_books" />
           <div className={styles.listView}>
             {EBooks.map(({ id, img, title, author, price }) => (
               <List
@@ -69,7 +69,7 @@ const AllBook = () => {
         </Fragment>
       ) : (
         <Fragment>
-          <HeaderTitle title="Myanmar Books" link="/book_shop" />
+          <HeaderTitle title="Myanmar Books" link="myanmar_books" />
           <div className={styles.gridView}>
             {MBooks.map(({ id, img, title, author, price }) => (
               <Grid
@@ -81,7 +81,7 @@ const AllBook = () => {
               />
             ))}
           </div>
-          <HeaderTitle title="English Books" link="/book_shop" />
+          <HeaderTitle title="English Books" link="english_books" />
           <div className={styles.gridView}>
             {EBooks.map(({ id, img, title, author, price }) => (
               <Grid
@@ -99,4 +99,4 @@ const AllBook = () => {
   );
 };
 
-export default AllBook;
+export default Books;

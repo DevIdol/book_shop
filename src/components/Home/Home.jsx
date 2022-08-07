@@ -1,12 +1,12 @@
 import { Container } from "react-bootstrap";
 import SideBar from "./SideBar/SideBar";
-import AllBook from "./Books/AllBook";
+import Books from "./Books/Books";
 
 const Home = () => {
   return (
     <Container fluid>
       <SideBar />
-      <AllBook />
+      <Books />
     </Container>
   );
 };

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../Data.module.css";
+import styles from "../All.module.css";
 import Header from "../../Header";
 import Grid from "../../Layout/Grid";
 import List from "../../Layout/List";
