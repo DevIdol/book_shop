@@ -7,7 +7,7 @@ const List = ({img, title, author, price}) => {
       <img className={styles.img} src={img} alt="bookImg" />
       <div className={styles.bookDesc}>
         <p>
-          <Link to="/book_shop/ViewBook" className={styles.title}>
+          <Link to="/book_shop/view_book" className={styles.title}>
            {title}
           </Link>
         </p>

@@ -93,7 +93,10 @@ html {
   color: #4e1d04 !important;
   background-color: transparent !important;
 }
-
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
 /* @media screen and (max-width: 400px) {
   .MuiInputBase-root {
     width: 120px !important;

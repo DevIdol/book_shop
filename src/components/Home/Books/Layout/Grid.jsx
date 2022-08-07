@@ -8,7 +8,7 @@ const Grid = ({img, title, author, price}) => {
       <div className={styles.grid}>
         <img className={styles.img} src={img} alt="bookImg" />
         <p>
-          <Link to="/book_shop/ViewBook" className={styles.title}>
+          <Link to="/book_shop/view_book" className={styles.title}>
           {title}
           </Link>
         </p>

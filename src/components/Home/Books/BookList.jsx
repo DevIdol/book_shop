@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { Pagination, Stack } from "@mui/material";
+import React, {useState } from "react";
+import usePagination from "../Pagination/Pagination";
 import styles from "./BookList.module.css";
 import Header from "./Header";
 import Grid from "./Layout/Grid";
@@ -8,6 +10,16 @@ const BookList = ({ bookList }) => {
   const [showList, setShowList] = useState(false);
   const toggleShowList = () => {
     setShowList(!showList);
+  };
+  let [page, setPage] = useState(1);
+  const PER_PAGE = 6;
+
+  const count = Math.ceil(bookList.length / PER_PAGE);
+  const _DATA = usePagination(bookList, PER_PAGE);
+
+  const handleChange = (e, p) => {
+    setPage(p);
+    _DATA.jump(p);
   };
 
   return (
@@ -33,7 +45,7 @@ const BookList = ({ bookList }) => {
       />
       {showList ? (
         <div className={styles.list}>
-          {bookList.map(({ id, img, title, author, price }) => (
+          {_DATA.currentData().map(({ id, img, title, author, price }) => (
             <List
               key={id}
               img={img}
@@ -45,7 +57,7 @@ const BookList = ({ bookList }) => {
         </div>
       ) : (
         <div className={styles.grid}>
-          {bookList.map(({ id, img, title, author, price }) => (
+          {_DATA.currentData().map(({ id, img, title, author, price }) => (
             <Grid
               key={id}
               img={img}
@@ -56,6 +68,16 @@ const BookList = ({ bookList }) => {
           ))}
         </div>
       )}
+      <div className={styles.pagination}>
+      <Stack spacing={2}>
+        <Pagination
+          count={count}
+          page={page}
+          shape="circular"
+          onChange={handleChange}
+        />
+      </Stack>
+      </div>
     </div>
   );
 };
