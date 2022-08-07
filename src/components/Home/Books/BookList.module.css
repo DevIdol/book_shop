@@ -1,40 +1,137 @@
 .books {
-    padding-top: 120px;
-    width: var(100% - 300px);
-    margin-left: 300px;
-    padding-bottom: 40px;
+  padding-top: 120px;
+  width: var(100% - 300px);
+  margin-left: 300px;
+  padding-bottom: 40px;
+}
+
+
+.releaseBook {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.releaseBook::-webkit-scrollbar {
+  height: 10px;
+}
+.header {
+  background-color: var(--primary-color);
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.headerTitle {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 8px;
+  line-height: 1.6;
+}
+.list,
+.grid {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+.bookDesc {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  border-bottom: 1px solid grey;
+}
+.bookImg {
+  width: 160px;
+  height: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.bookImg:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: var(--transition);
+}
+.bookDesRight {
+  padding-top: 2px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bookName {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.author {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+}
+.shopBtnMax {
+  align-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shopNow {
+  background-color: tomato;
+}
+.shopNow:hover {
+  background-color: rgb(219, 68, 42);
+  transition: var(--transition);
+}
+.addCart {
+  background-color: var(--primary-color);
+}
+.addCart:hover {
+  background-color: #203d3c;
+  transition: var(--transition);
+}
+
+.shopNow,
+.addCart {
+  border-radius: 20px;
+  padding: 6px 30px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+.shopNow:hover,
+.addCart:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+@media screen and (max-width: 800px) {
+  .books {
+    padding-top: 160px;
+    margin-left: 0;
+    width: 100%;
   }
-  
-  .releaseBook {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    overflow: auto;
-    white-space: nowrap;
-  }
-  .releaseBook::-webkit-scrollbar {
-    height: 10px;
-  }
-  .list,
-  .grid {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-  }
-  .pagination{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-  }
-  @media screen and (max-width: 800px) {
-    .books {
-      padding-top: 160px;
-      margin-left: 0;
-      width: 100%;
-    }
-  }
-  
+}

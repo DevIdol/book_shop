@@ -65,7 +65,7 @@
   font-weight: bold;
 }
 .shopBtnMax {
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -90,8 +90,8 @@
 
 .shopNow,
 .addCart {
-  border-radius: 4px;
-  padding: 6px 30px;
+  border-radius: 20px;
+  padding: 6px 34px;
   border: 1px solid transparent;
   color: #fff;
   font-weight: 500;
