@@ -6,7 +6,7 @@ import styles from "./BookList.module.css";
 
 import List from "./Layout/List";
 
-const BookList = ({ bookList }) => {
+const BookList = ({ bookList, title }) => {
   let [page, setPage] = useState(1);
   const PER_PAGE = 6;
 
@@ -35,7 +35,7 @@ const BookList = ({ bookList }) => {
         </div>
       </div>
       <div className={styles.header}>
-        <h1 className={styles.headerTitle}>Myanmar Books</h1>
+        <h1 className={styles.headerTitle}>{title}</h1>
       </div>
 
       <div className={styles.grid}>

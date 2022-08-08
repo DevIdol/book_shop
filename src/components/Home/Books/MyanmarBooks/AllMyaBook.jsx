@@ -12,7 +12,7 @@ const AllMyaBook = () => {
   return (
     <Container fluid>
       <SideBar />
-      <BookList bookList={MBooks} />
+      <BookList bookList={MBooks} title="Myanmar Books" />
     </Container>
   );
 };

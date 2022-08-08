@@ -43,7 +43,7 @@ const Books = () => {
       {showList ? (
         <Fragment>
           <HeaderTitle title="Myanmar Books" link="myanmar_books" />
-          <div className={styles.listView}>
+          <Link to="/book_shop/view_book" className={styles.listView}>
             {MBooks.slice(0,6).map(({ id, img, title, author, price }) => (
               <List
                 key={id}
@@ -53,9 +53,9 @@ const Books = () => {
                 price={price}
               />
             ))}
-          </div>
+          </Link>
           <HeaderTitle title="English Books" link="english_books" />
-          <div className={styles.listView}>
+          <Link to="/book_shop/view_book" className={styles.listView}>
             {EBooks.map(({ id, img, title, author, price }) => (
               <List
                 key={id}
@@ -65,12 +65,12 @@ const Books = () => {
                 price={price}
               />
             ))}
-          </div>
+          </Link>
         </Fragment>
       ) : (
         <Fragment>
           <HeaderTitle title="Myanmar Books" link="myanmar_books" />
-          <div className={styles.gridView}>
+          <Link to="/book_shop/view_book" className={styles.gridView}>
             {MBooks.map(({ id, img, title, author, price }) => (
               <Grid
                 key={id}
@@ -80,9 +80,9 @@ const Books = () => {
                 price={price}
               />
             ))}
-          </div>
+          </Link>
           <HeaderTitle title="English Books" link="english_books" />
-          <div className={styles.gridView}>
+          <Link to="/book_shop/view_book" className={styles.gridView}>
             {EBooks.map(({ id, img, title, author, price }) => (
               <Grid
                 key={id}
@@ -92,7 +92,7 @@ const Books = () => {
                 price={price}
               />
             ))}
-          </div>
+          </Link>
         </Fragment>
       )}
     </div>
