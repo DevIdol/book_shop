@@ -22,7 +22,7 @@ const BookList = ({ bookList, title }) => {
     <div className={styles.books}>
       <div className={styles.newRelease}>
         <h3>Most Popular</h3>
-        <div className={styles.releaseBook}>
+        <Link to="/book_shop/view_book" className={styles.releaseBook}>
           {bookList.slice(0, 6).map(({ id, img, title, author, price }) => (
             <List
               key={id}
@@ -32,7 +32,7 @@ const BookList = ({ bookList, title }) => {
               price={price}
             />
           ))}
-        </div>
+        </Link>
       </div>
       <div className={styles.header}>
         <h1 className={styles.headerTitle}>{title}</h1>

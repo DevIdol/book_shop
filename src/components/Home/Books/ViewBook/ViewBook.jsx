@@ -1,8 +1,9 @@
 import styles from "./ViewBook.module.css";
 import img from "../../../../assets/img.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Grid from "../Layout/Grid";
 import { books } from "../Data";
+import { Link } from "react-router-dom";
 
 const ViewBook = () => {
   const [quantity, setQuantity] = useState(1);
@@ -15,6 +16,12 @@ const ViewBook = () => {
     }
   };
   const SliceBooks = books.slice(0).reverse();
+  const onScrollTop = () => {
+    window.scrollTo(0, 0);
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.books}>
       <div className={styles.viewBook}>
@@ -87,7 +94,11 @@ const ViewBook = () => {
       <hr />
       <div className={styles.newRelease}>
         <h3>New Releases</h3>
-        <div className={styles.releaseBook}>
+        <Link
+          onClick={onScrollTop}
+          to="/book_shop/view_book"
+          className={styles.releaseBook}
+        >
           {SliceBooks.slice(0, 6).map(({ id, img, title, author, price }) => (
             <Grid
               key={id}
@@ -97,7 +108,7 @@ const ViewBook = () => {
               price={price}
             />
           ))}
-        </div>
+        </Link>
       </div>
     </div>
   );
