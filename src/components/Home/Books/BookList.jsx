@@ -6,7 +6,9 @@ import styles from "./BookList.module.css";
 
 import List from "./Layout/List";
 
+
 const BookList = ({ bookList, title }) => {
+ 
   let [page, setPage] = useState(1);
   const PER_PAGE = 6;
 
@@ -40,7 +42,7 @@ const BookList = ({ bookList, title }) => {
 
       <div className={styles.grid}>
         {_DATA.currentData().map(({ id, img, title, author, price }) => (
-          <div className={styles.wrapper}>
+          <div className={styles.wrapper} key={id}>
             <Link to="/book_shop/view_book" className={styles.bookDesc}>
               <img className={styles.bookImg} src={img} alt="book_img" />
               <div className={styles.bookDesRight}>
@@ -60,6 +62,7 @@ const BookList = ({ bookList, title }) => {
       <div className={styles.pagination}>
         <Stack spacing={2}>
           <Pagination
+            color="primary"
             size="large"
             count={count}
             page={page}

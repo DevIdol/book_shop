@@ -70,18 +70,7 @@ html {
 .swiper-pagination-bullet-active {
   background-color: red !important;
 }
-/* @media screen and (max-width: 420px) {
-  .MuiButtonBase-root {
-    width: 20px !important;
-  }
-  .ForwardRef-searchContainer,
-  .MuiPaper-root {
-    padding: 0 !important;
-  }
-  .MuiInputBase-root {
-    width: 150px !important;
-  }
-} */
+
 .accordion-button:focus {
   border-radius: 6px !important;
   border: 1px solid var(--primary-color) !important;
@@ -93,23 +82,7 @@ html {
   color: #4e1d04 !important;
   background-color: transparent !important;
 }
-.css-rppfq7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+/* .css-rppfq7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
   background-color: var(--primary-color) !important;
   color: #fff !important;
-}
-/* @media screen and (max-width: 400px) {
-  .MuiInputBase-root {
-    width: 120px !important;
-  }
-}
-@media screen and (max-width: 370px) {
-  .MuiInputBase-root {
-    width: 100px !important;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .MuiInputBase-root {
-    width: 90px !important;
-  }
 } */
