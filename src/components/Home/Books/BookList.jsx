@@ -40,21 +40,20 @@ const BookList = ({ bookList }) => {
 
       <div className={styles.grid}>
         {_DATA.currentData().map(({ id, img, title, author, price }) => (
-          <Link to="/book_shop/view_book" className={styles.bookDesc}>
-            <img className={styles.bookImg} src={img} alt="book_img" />
-            <div className={styles.bookDesRight}>
-              <div>
+          <div className={styles.wrapper}>
+            <Link to="/book_shop/view_book" className={styles.bookDesc}>
+              <img className={styles.bookImg} src={img} alt="book_img" />
+              <div className={styles.bookDesRight}>
                 <p className={styles.bookName}>{title}</p>
                 <p className={styles.author}>{author}</p>
                 <p className={styles.price}>{price} MMK</p>
               </div>
-
-              <div className={styles.shopBtnMax}>
-                <button className={styles.shopNow}>Shop Now</button>
-                <button className={styles.addCart}>Add To Cart</button>
-              </div>
+            </Link>
+            <div className={styles.shopBtnMax}>
+              {/* <button className={styles.shopNow}>Shop Now</button> */}
+              <button className={styles.addCart}>Add To Cart</button>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
 
