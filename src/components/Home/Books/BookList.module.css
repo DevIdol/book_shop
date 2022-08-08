@@ -44,6 +44,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 5px -5px #333;
 }
 .bookDesc {
   margin-top: 20px;
@@ -53,8 +55,8 @@
   flex-direction: row;
 }
 .bookImg {
-  width: 120px;
-  height: 150px;
+  width: 140px;
+  height: 180px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 6px;
   cursor: pointer;
