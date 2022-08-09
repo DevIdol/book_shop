@@ -1,12 +1,12 @@
 .grid {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 168px;
+  width: 146px;
   height: 100%;
   transition: var(--transition);
 }
 .img {
-  width: 140px;
-  height: 180px;
+  width: 146px;
+  height: 190px;
   padding: 2px;
   border-radius: 6px;
   cursor: pointer;

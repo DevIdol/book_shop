@@ -130,7 +130,6 @@
   flex-direction: row;
   gap: 4px;
   overflow: auto;
-  white-space: nowrap;
 }
 .releaseBook::-webkit-scrollbar {
   height: 10px;
