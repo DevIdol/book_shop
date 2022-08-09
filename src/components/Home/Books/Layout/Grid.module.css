@@ -65,14 +65,3 @@
   margin-top: -8px;
   padding: 0 4px;
 }
-@media screen and (max-width: 460px) {
-  .img {
-    width: 120px;
-  }
-  .title {
-    font-size: 12px;
-  }
-  .author {
-    font-size: 10px;
-  }
-}
