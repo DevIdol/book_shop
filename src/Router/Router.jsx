@@ -7,6 +7,7 @@ import MTech from "../components/Home/Books/MyanmarBooks/MTechnology/MTech";
 import MReligious from "../components/Home/Books/MyanmarBooks/MReligious/MReligious";
 import ViewBooks from "../components/Home/Books/ViewBooks";
 import AllMyaBook from "../components/Home/Books/MyanmarBooks/AllMyaBook";
+import Login from "../components/Login/Login";
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
       <Route path="/book_shop/myanmar_novels" element={<MNovel />} />
       <Route path="/book_shop/myanmar_technologies" element={<MTech />} />
       <Route path="/book_shop/myanmar_religious" element={<MReligious />} />
+      <Route path="/login" element={<Login/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
