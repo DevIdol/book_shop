@@ -52,7 +52,7 @@ const BookList = ({ bookList, title }) => {
               </div>
             </Link>
             <div className={styles.shopBtnMax}>
-              {/* <button className={styles.shopNow}>Shop Now</button> */}
+              <button className={styles.shopNow}>Buy Now</button>
               <button className={styles.addCart}>Add To Cart</button>
             </div>
           </div>

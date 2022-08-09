@@ -90,12 +90,15 @@
 .shopBtnMax {
   align-content: flex-end;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
 .shopNow {
   background-color: tomato;
+  width: 50%;
 }
 .shopNow:hover {
   background-color: rgb(219, 68, 42);
@@ -103,6 +106,7 @@
 }
 .addCart {
   background-color: var(--primary-color);
+  width: 50%;
 }
 .addCart:hover {
   background-color: #203d3c;

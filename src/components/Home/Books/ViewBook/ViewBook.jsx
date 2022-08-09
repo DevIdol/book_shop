@@ -62,13 +62,13 @@ const ViewBook = () => {
               </p>
             </div>
             <div className={styles.shopBtnMax}>
-              <button className={styles.shopNow}>Shop Now</button>
+              <button className={styles.shopNow}>Buy Now</button>
               <button className={styles.addCart}>Add To Cart</button>
             </div>
           </div>
         </div>
         <div className={styles.shopBtnMin}>
-          <button className={styles.shopNow}>Shop Now</button>
+          <button className={styles.shopNow}>Buy Now</button>
           <button className={styles.addCart}>Add To Cart</button>
         </div>
         <div className={styles.productDetail}>
