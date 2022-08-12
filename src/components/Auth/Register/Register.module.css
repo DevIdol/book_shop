@@ -59,7 +59,11 @@
     bottom: 85px;
   }
   .showPassIcon {
+    transform: scale(1.2);
     color: rgb(95, 94, 94);
+  }
+  .icon{
+    transform: scale(1.2);
   }
   .registerBtn {
     color: #fff;

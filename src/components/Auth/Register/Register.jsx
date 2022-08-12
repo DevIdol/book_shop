@@ -14,11 +14,11 @@ const Register = () => {
     <div className={styles.registerPage}>
       <h5>Welcome, Please Register</h5>
       <form className={styles.form}>
-        <span className={styles.name}><PersonRoundedIcon/></span>
+        <span className={styles.name}><PersonRoundedIcon className={styles.icon}/></span>
         <input type='text' placeholder="Full Name" />
-        <span className={styles.mail} ><MailRoundedIcon/></span>
+        <span className={styles.mail} ><MailRoundedIcon className={styles.icon}/></span>
         <input type="email" placeholder="Email" />
-        <span className={styles.pass}><VpnKeyRoundedIcon/></span>
+        <span className={styles.pass}><VpnKeyRoundedIcon className={styles.icon}/></span>
         <input className={styles.passInput} type={showPass ? "text" : "password"} placeholder="Password" />
 
         <span onClick={showPassword} className={styles.showPass}>

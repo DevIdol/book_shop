@@ -13,9 +13,9 @@ const Login = () => {
     <div className={styles.loginPage}>
       <h5>Welcome Back, Please Login</h5>
       <form className={styles.form}>
-        <span className={styles.mail} ><MailRoundedIcon/></span>
+        <span className={styles.mail} ><MailRoundedIcon className={styles.icon} /></span>
         <input type="email" placeholder="Email" />
-        <span className={styles.pass}><VpnKeyRoundedIcon/></span>
+        <span className={styles.pass}><VpnKeyRoundedIcon className={styles.icon}/></span>
         <input className={styles.passInput} type={showPass ? "text" : "password"} placeholder="Password" />
 
         <span onClick={showPassword} className={styles.showPass}>
