@@ -16,7 +16,7 @@ const Login = () => {
         <span className={styles.mail} ><MailRoundedIcon/></span>
         <input type="email" placeholder="Email" />
         <span className={styles.pass}><VpnKeyRoundedIcon/></span>
-        <input type={showPass ? "text" : "password"} placeholder="Password" />
+        <input className={styles.passInput} type={showPass ? "text" : "password"} placeholder="Password" />
 
         <span onClick={showPassword} className={styles.showPass}>
           {showPass ? (

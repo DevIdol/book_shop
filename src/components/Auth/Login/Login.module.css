@@ -21,7 +21,7 @@
 }
 
 .form input {
-  height: 60px;
+  height: 54px;
   padding: 2px 4px 2px 38px;
   border: none;
   border-radius: 10px;
@@ -36,19 +36,22 @@
 }
 .mail {
   position: absolute;
-  top: 18px;
+  top: 15px;
   left: 6px;
 }
 .pass {
   position: absolute;
-  padding-top: 18px;
+  bottom: 85px;
   left: 6px;
+}
+.passInput {
+  padding-right: 40px !important;
 }
 .showPass {
   cursor: pointer;
   position: absolute;
   right: 10px;
-  padding-top: 18px;
+  bottom: 85px;
 }
 .showPassIcon {
   color: rgb(95, 94, 94);
