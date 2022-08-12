@@ -1,0 +1,93 @@
+.registerPage {
+    width: 340px;
+    text-align: center;
+    margin: 160px auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .registerPage h5 {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .form input {
+    height: 50px;
+    padding: 2px 4px 2px 38px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    box-shadow: inset -5px -5px 9px rgba(255, 254, 254, 0.986),
+      inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+  }
+  .form input:focus {
+    border: 1px solid var(--primary-color);
+    transition: var(--transition);
+  }
+  .mail {
+    position: absolute;
+    top: 93px;
+    left: 6px;
+  }
+  .name{
+    position: absolute;
+    left: 6px;
+    top: 12px;
+  }
+  .pass {
+    position: absolute;
+    left: 6px;
+    bottom: 83px;
+  }
+  .showPass {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    bottom: 83px;
+  }
+  .showPassIcon {
+    color: rgb(95, 94, 94);
+  }
+  .registerBtn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.4) 0px -40px 0px inset;
+  }
+  .registerBtn:hover {
+    transition: var(--transition);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset;
+  }
+  .bottom {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .forgotPassword:hover,
+  .register:hover {
+    text-decoration: underline !important;
+  }
+  @media screen and (max-width: 800px) {
+    .registerPage {
+      margin: 170px auto 0 auto;
+    }
+  }
+  

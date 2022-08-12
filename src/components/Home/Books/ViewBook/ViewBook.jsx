@@ -99,7 +99,7 @@ const ViewBook = () => {
           to="/book_shop/view_book"
           className={styles.releaseBook}
         >
-          {SliceBooks.slice(0, 6).map(({ id, img, title, author, price }) => (
+          {SliceBooks.slice(0, 8).map(({ id, img, title, author, price }) => (
             <Grid
               key={id}
               img={img}
