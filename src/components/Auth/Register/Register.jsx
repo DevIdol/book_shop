@@ -32,7 +32,7 @@ const Register = () => {
       </form>
       <div className={styles.bottom}>
         <Link className={styles.register} to="/login">
-          Already have an account? Please Register
+          Already have an account? Please Login
         </Link>
       </div>
     </div>

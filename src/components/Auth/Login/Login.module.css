@@ -1,5 +1,5 @@
 .loginPage {
-  width: 340px;
+  width: 346px;
   text-align: center;
   margin: 160px auto 0 auto;
   background-color: rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@
 }
 
 .form input {
-  height: 50px;
+  height: 60px;
   padding: 2px 4px 2px 38px;
   border: none;
   border-radius: 10px;
@@ -36,19 +36,19 @@
 }
 .mail {
   position: absolute;
-  top: 12.5px;
+  top: 18px;
   left: 6px;
 }
 .pass {
   position: absolute;
-  padding-top: 8px;
+  padding-top: 18px;
   left: 6px;
 }
 .showPass {
   cursor: pointer;
   position: absolute;
   right: 10px;
-  padding-top: 12px;
+  padding-top: 18px;
 }
 .showPassIcon {
   color: rgb(95, 94, 94);

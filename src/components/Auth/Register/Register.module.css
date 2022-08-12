@@ -1,5 +1,5 @@
 .registerPage {
-    width: 340px;
+    width: 346px;
     text-align: center;
     margin: 160px auto 0 auto;
     background-color: rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@
   }
   
   .form input {
-    height: 50px;
+    height: 60px;
     padding: 2px 4px 2px 38px;
     border: none;
     border-radius: 10px;
@@ -36,24 +36,24 @@
   }
   .mail {
     position: absolute;
-    top: 93px;
+    top: 108px;
     left: 6px;
   }
   .name{
     position: absolute;
     left: 6px;
-    top: 12px;
+    top: 16px;
   }
   .pass {
     position: absolute;
     left: 6px;
-    bottom: 83px;
+    bottom: 88px;
   }
   .showPass {
     cursor: pointer;
     position: absolute;
     right: 8px;
-    bottom: 83px;
+    bottom: 88px;
   }
   .showPassIcon {
     color: rgb(95, 94, 94);
@@ -87,7 +87,7 @@
   }
   @media screen and (max-width: 800px) {
     .registerPage {
-      margin: 170px auto 0 auto;
+      margin: 190px auto 0 auto;
     }
   }
   
