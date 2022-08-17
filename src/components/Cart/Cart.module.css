@@ -1,0 +1,9 @@
+.cartContainer{
+ padding-top: 130px;
+}
+
+@media screen and (max-width: 800px) {
+.cartContainer{
+    padding-top: 160px;
+}
+}

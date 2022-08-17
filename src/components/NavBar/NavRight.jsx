@@ -51,7 +51,7 @@ const NavRight = ({ isOpen }) => {
             fontWeight: isActive && "bold",
           };
         }}
-        to="/add-to-cart"
+        to="/cart"
         className={styles.item}
       >
         <Badge color="error" className={styles.badge} badgeContent={10}>

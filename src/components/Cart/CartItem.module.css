@@ -1,0 +1,47 @@
+.cartItems {
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.img {
+  width: 110px;
+  height: 100%;
+}
+.amount {
+  padding-right: 16px;
+  font-size: 14px;
+}
+.bookName {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.author {
+  line-height: 1.6;
+}
+.author,
+.pages,
+.price {
+  font-size: 14px;
+  font-weight: 200;
+}
+.price {
+  color: red;
+  font-weight: bold;
+}
+
+.decrease,
+.increase {
+  border: 1px solid transparent;
+  background-color: #ccc;
+  font-weight: 500;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.quantity {
+  padding: 0 10px;
+  font-weight: bold;
+}

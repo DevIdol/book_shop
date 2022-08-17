@@ -45,7 +45,7 @@ const Home = () => {
           <ArrowForwardIosIcon className={styles.icon} />
           <Link to={`/${pathName}`} className={styles.item}>
             {pathName
-              ? pathName === "add-to-cart"
+              ? pathName === "cart"
                 ? "Shopping Cart"
                 : MyanmarBooks
                 ? "Myanmar Books"
