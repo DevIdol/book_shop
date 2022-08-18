@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {BsTrash} from 'react-icons/bs'
+import { BsTrash } from "react-icons/bs";
 import img from "../../assets/mbook.jpg";
 import styles from "./CartItem.module.css";
 
@@ -20,7 +20,7 @@ const CartItem = () => {
         <div>
           <p className={styles.bookName}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
           <p className={styles.author}>ဆရာချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-          <p className={styles.price}>$ 24.22</p>
+
           <div>
             <p>
               <span className={styles.amount}>Quantity:</span>
@@ -51,7 +51,17 @@ const CartItem = () => {
               </button>
             </p>
           </div>
-          <BsTrash/>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <p className={styles.price}>$ {24.22 * quantity}</p>
+            <BsTrash className={styles.deleteIcon} />
+          </div>
         </div>
       </div>
     </div>
