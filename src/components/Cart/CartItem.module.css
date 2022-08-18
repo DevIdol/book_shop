@@ -45,9 +45,8 @@
   padding: 0 10px;
   font-weight: bold;
 }
-.deleteIcon{
+.deleteIcon {
   color: tomato;
-  transform: scale(1.1);
+  transform: scale(1.4);
   cursor: pointer;
-  margin-top: -14px;
 }
