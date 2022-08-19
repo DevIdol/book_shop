@@ -6,11 +6,11 @@ const Cart = () => {
   return (
     <Container className={styles.cartContainer}>
       <CartItem />
-      <div>
+      <div className={styles.summary}>
         <h3>Summary</h3>
-        <p>Total Product</p>
-        <p>Total Price</p>
-        <button>Check Out</button>
+        <p>Product Count: <span style={{paddingLeft: '14px'}}>{4}</span></p>
+        <p>Total Price: <span style={{paddingLeft: '14px'}}>{8000}</span> MMK</p>
+        <button className={styles.checkOut}>Check Out</button>
       </div>
     </Container>
   )

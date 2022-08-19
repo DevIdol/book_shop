@@ -59,7 +59,7 @@ const CartItem = () => {
               justifyContent: "space-between",
             }}
           >
-            <p className={styles.price}>$ {24.22 * quantity}</p>
+            <p className={styles.price}>{2000 * quantity} MMK</p>
             <BsTrash className={styles.deleteIcon} />
           </div>
         </div>
