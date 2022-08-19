@@ -4,7 +4,7 @@ import CartItem from "./CartItem";
 
 const Cart = () => {
   return (
-    <div className={styles.cartContainer}>
+    <Container className={styles.cartContainer}>
       <div
         style={{
           display: "flex",
@@ -29,7 +29,7 @@ const Cart = () => {
         </p>
         <button className={styles.checkOut}>Check Out</button>
       </div>
-    </div>
+    </Container>
   );
 };
 

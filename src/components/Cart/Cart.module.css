@@ -1,7 +1,6 @@
 .cartContainer {
-  padding: 0 40px;
   padding-top: 130px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -9,10 +8,9 @@
 }
 
 .summary {
-  width: 300px;
   height: 180px;
   border: 1px solid gray;
-  padding: 10px 10px 34px 10px;
+  padding: 10px 20px 34px 20px;
   border-radius: 10px;
   position: relative;
 }
