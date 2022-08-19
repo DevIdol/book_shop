@@ -11,7 +11,7 @@ const Cart = () => {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
-          gap: "20px"
+          gap: "20px",
         }}
       >
         <CartItem />
