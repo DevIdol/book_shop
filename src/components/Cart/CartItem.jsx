@@ -19,7 +19,7 @@ const CartItem = () => {
       <div className={styles.desc}>
         <div>
           <p className={styles.bookName}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
-          <p className={styles.author}>ဆရာချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
+          {/* <p className={styles.author}>ဆရာချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p> */}
 
           <div>
             <p>

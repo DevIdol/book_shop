@@ -1,5 +1,6 @@
 .cartItems {
-  border-bottom: 1px solid grey;
+  width: 100%;
+  box-shadow: 0 3px 3px -3px #333;
   padding: 10px;
   display: flex;
   flex-direction: row;
