@@ -31,11 +31,11 @@ const Cart = () => {
           <div className={styles.summary}>
             <h3>Summary</h3>
             <p>
-              Product Count:{" "}
+              Product Count:
               <span style={{ paddingLeft: "10px" }}>{cart.quantity}</span>
             </p>
             <p>
-              Total Price:{" "}
+              Total Price:
               <span style={{ paddingLeft: "10px" }}>{cart.total}</span> MMK
             </p>
             <button className={styles.checkOut}>Check Out</button>

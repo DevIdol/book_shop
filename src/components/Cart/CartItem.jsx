@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BsTrash } from "react-icons/bs";
 import img from "../../assets/mbook.jpg";
 import styles from "./CartItem.module.css";
