@@ -4,9 +4,15 @@ import { useEffect, useState } from "react";
 import Grid from "../Layout/Grid";
 import { books } from "../Data";
 import { Link } from "react-router-dom";
+import { addProduct } from "../../../../redux/CartRedux";
+import { useDispatch } from "react-redux";
 
 const ViewBook = () => {
+  // const [book, setBook] = useState(books);
+  const product = Object.assign({}, ...books);
+
   const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
   const handleQuantity = (type) => {
     if (type === "dec") {
       quantity > 1 && setQuantity((pre) => pre - 1);
@@ -15,6 +21,17 @@ const ViewBook = () => {
       quantity < 4 && setQuantity((pre) => pre + 1);
     }
   };
+
+  const handleClick = () => {
+    dispatch(
+      addProduct({
+        ...product,
+        quantity,
+        price: product.price * quantity,
+      })
+    );
+  };
+
   const SliceBooks = books.slice(0).reverse();
   const onScrollTop = () => {
     window.scrollTo(0, 0);
@@ -63,13 +80,17 @@ const ViewBook = () => {
             </div>
             <div className={styles.shopBtnMax}>
               <button className={styles.shopNow}>Buy Now</button>
-              <button className={styles.addCart}>Add To Cart</button>
+              <button onClick={handleClick} className={styles.addCart}>
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>
         <div className={styles.shopBtnMin}>
           <button className={styles.shopNow}>Buy Now</button>
-          <button className={styles.addCart}>Add To Cart</button>
+          <button onClick={handleClick} className={styles.addCart}>
+            Add To Cart
+          </button>
         </div>
         <div className={styles.productDetail}>
           <h3 style={{ textAlign: "center" }}>Product Details</h3>
@@ -87,7 +108,7 @@ const ViewBook = () => {
             <span className={styles.type}>Type:</span>Story
           </p>
           <p>
-            <span className={styles.prices}>Price:</span>$ 24.22
+            <span className={styles.prices}>Price:</span>$ 2000
           </p>
         </div>
       </div>

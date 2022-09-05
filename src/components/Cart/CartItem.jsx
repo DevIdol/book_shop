@@ -3,22 +3,22 @@ import { BsTrash } from "react-icons/bs";
 import img from "../../assets/mbook.jpg";
 import styles from "./CartItem.module.css";
 
-const CartItem = () => {
-  const [quantity, setQuantity] = useState(1);
+const CartItem = ({title, price, quantity}) => {
+  // const [quantity, setQuantity] = useState(1);
   const handleQuantity = (type) => {
-    if (type === "dec") {
-      quantity > 1 && setQuantity((pre) => pre - 1);
-    }
-    if (type === "inc") {
-      quantity < 4 && setQuantity((pre) => pre + 1);
-    }
+    // if (type === "dec") {
+    //   quantity > 1 && setQuantity((pre) => pre - 1);
+    // }
+    // if (type === "inc") {
+    //   quantity < 4 && setQuantity((pre) => pre + 1);
+    // }
   };
   return (
     <div className={styles.cartItems}>
       <img className={styles.img} src={img} alt="/book_img" />
       <div className={styles.desc}>
         <div>
-          <p className={styles.bookName}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
+          <p className={styles.bookName}>{title}</p>
           {/* <p className={styles.author}>ဆရာချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p> */}
 
           <div>
@@ -59,7 +59,7 @@ const CartItem = () => {
               justifyContent: "space-between",
             }}
           >
-            <p className={styles.price}>{2000 * quantity} MMK</p>
+            <p className={styles.price}>{price} MMK</p>
             <BsTrash className={styles.deleteIcon} />
           </div>
         </div>

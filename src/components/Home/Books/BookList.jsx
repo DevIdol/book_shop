@@ -1,14 +1,35 @@
 import { Pagination, Stack } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { addProduct } from "../../../redux/CartRedux";
 import usePagination from "../Pagination/Pagination";
 import styles from "./BookList.module.css";
-
+import { useDispatch } from "react-redux";
 import List from "./Layout/List";
 
-
 const BookList = ({ bookList, title }) => {
- 
+  console.log(bookList);
+  const product = Object.assign({}, ...bookList);
+  const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
+  // const handleQuantity = (type) => {
+  //   if (type === "dec") {
+  //     quantity > 1 && setQuantity((pre) => pre - 1);
+  //   }
+  //   if (type === "inc") {
+  //     quantity < 4 && setQuantity((pre) => pre + 1);
+  //   }
+  // };
+  const handleClick = () => {
+    dispatch(
+      addProduct({
+        ...product,
+        quantity,
+        price: product.price * quantity,
+      })
+    );
+  };
+
   let [page, setPage] = useState(1);
   const PER_PAGE = 6;
 
@@ -53,7 +74,9 @@ const BookList = ({ bookList, title }) => {
             </Link>
             <div className={styles.shopBtnMax}>
               <button className={styles.shopNow}>Buy Now</button>
-              <button className={styles.addCart}>Add To Cart</button>
+              <button onClick={handleClick} className={styles.addCart}>
+                Add To Cart
+              </button>
             </div>
           </div>
         ))}

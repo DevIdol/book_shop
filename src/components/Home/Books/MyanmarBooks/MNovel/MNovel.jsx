@@ -15,7 +15,7 @@ const MNovel = () => {
   return (
     <Container fluid>
       <SideBar />
-      <BookList bookList={MBooks} title="ဝတ္ထု စာအုပ်များ" />
+      <BookList bookList={MBooks} title="ဝတ္ထု စာအုပ်များ" total={2} />
     </Container>
   );
 };

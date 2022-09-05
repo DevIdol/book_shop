@@ -4,7 +4,11 @@ import { NavLink } from "react-router-dom";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 import Badge from "@mui/material/Badge";
+import {useSelector} from 'react-redux'
 const NavRight = ({ isOpen }) => {
+  const quantity = useSelector(state => state.cart.quantity)
+  console.log(quantity)
+
   return (
     <ul className={styles.navRight}>
      
@@ -54,7 +58,7 @@ const NavRight = ({ isOpen }) => {
         to="/cart"
         className={styles.item}
       >
-        <Badge color="error" className={styles.badge} badgeContent={10}>
+        <Badge color="error" className={styles.badge} badgeContent={quantity}>
           <AddShoppingCartIcon className={styles.cart} />
         </Badge>
       </NavLink>
