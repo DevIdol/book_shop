@@ -7,7 +7,6 @@ import Badge from "@mui/material/Badge";
 import {useSelector} from 'react-redux'
 const NavRight = ({ isOpen }) => {
   const quantity = useSelector(state => state.cart.quantity)
-  console.log(quantity)
 
   return (
     <ul className={styles.navRight}>

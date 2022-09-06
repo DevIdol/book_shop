@@ -8,9 +8,9 @@ import { useDispatch } from "react-redux";
 import List from "./Layout/List";
 
 const BookList = ({ bookList, title }) => {
-  console.log(bookList);
+
   const product = Object.assign({}, ...bookList);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity] = useState(1);
   const dispatch = useDispatch();
   // const handleQuantity = (type) => {
   //   if (type === "dec") {

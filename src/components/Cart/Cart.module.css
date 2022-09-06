@@ -49,6 +49,28 @@
   transform: scale(1.02);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.clearCartBtn {
+  width: 100%;
+  margin-top: 20px;
+  background-color: tomato;
+}
+.clearCartBtn:hover {
+  background-color: rgb(219, 68, 42);
+  transition: var(--transition);
+}
+
+.clearCartBtn {
+  border-radius: 20px;
+  padding: 6px 30px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+.clearCartBtn:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 @media screen and (max-width: 800px) {
   .cartContainer {
