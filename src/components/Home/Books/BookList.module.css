@@ -73,27 +73,26 @@
 }
 .bookName {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.6;
 }
 .author {
   color: #000;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.6;
+  font-style: italic;
 }
 .price {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: red;
 }
 .shopBtnMax {
   align-content: flex-end;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .shopNow {
@@ -106,7 +105,6 @@
 }
 .addCart {
   background-color: var(--primary-color);
-  width: 50%;
 }
 .addCart:hover {
   background-color: #203d3c;

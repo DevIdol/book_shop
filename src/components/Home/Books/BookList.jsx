@@ -64,19 +64,30 @@ const BookList = ({ bookList, title }) => {
       <div className={styles.grid}>
         {_DATA.currentData().map(({ id, img, title, author, price }) => (
           <div className={styles.wrapper} key={id}>
-            <Link to="/book_shop/view_book" className={styles.bookDesc}>
-              <img className={styles.bookImg} src={img} alt="book_img" />
-              <div className={styles.bookDesRight}>
-                <p className={styles.bookName}>{title}</p>
-                <p className={styles.author}>{author}</p>
-                <p className={styles.price}>{price} MMK</p>
+            <div className={styles.bookDesc}>
+              <Link to="/book_shop/view_book">
+                <img className={styles.bookImg} src={img} alt="book_img" />
+              </Link>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  paddingBottom: "4px",
+                }}
+              >
+                <Link to="/book_shop/view_book" className={styles.bookDesRight}>
+                  <p className={styles.bookName}>{title}</p>
+                  <p className={styles.author}>{author}</p>
+                  <p className={styles.price}>{price} MMK</p>
+                </Link>
+                <div className={styles.shopBtnMax}>
+                  {/* <button className={styles.shopNow}>Buy Now</button> */}
+                  <button onClick={handleClick} className={styles.addCart}>
+                    Add To Cart
+                  </button>
+                </div>
               </div>
-            </Link>
-            <div className={styles.shopBtnMax}>
-              <button className={styles.shopNow}>Buy Now</button>
-              <button onClick={handleClick} className={styles.addCart}>
-                Add To Cart
-              </button>
             </div>
           </div>
         ))}

@@ -39,6 +39,7 @@
 }
 .author {
   line-height: 1.6;
+  font-style: italic;
 }
 .author,
 .pages,

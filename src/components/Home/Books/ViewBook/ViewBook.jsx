@@ -27,7 +27,7 @@ const ViewBook = () => {
       addProduct({
         ...product,
         quantity,
-        price: product.price * quantity,
+        price: product.price,
       })
     );
   };
@@ -47,7 +47,7 @@ const ViewBook = () => {
           <div>
             <p className={styles.bookName}>ဂရုမစိုက်ခြင်း အနုပညာ</p>
             <p className={styles.author}>ဆရာချမ်းမြေ့ဝင်း ဘာသာပြန်သည်</p>
-            <p className={styles.price}>$ 24.22</p>
+            <p className={styles.price}>{2000 * quantity} MMK</p>
             <div>
               <p>
                 <span className={styles.amount}>Quantity:</span>
@@ -108,7 +108,7 @@ const ViewBook = () => {
             <span className={styles.type}>Type:</span>Story
           </p>
           <p>
-            <span className={styles.prices}>Price:</span>$ 2000
+            <span className={styles.prices}>Price:</span>{2000} MMK
           </p>
         </div>
       </div>
